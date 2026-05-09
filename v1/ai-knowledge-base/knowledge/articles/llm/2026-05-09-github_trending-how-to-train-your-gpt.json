@@ -1,0 +1,10 @@
+{
+  "id": "github_trending/how-to-train-your-gpt",
+  "title": "raiyanyahya/how-to-train-your-gpt",
+  "source_url": "https://github.com/raiyanyahya/how-to-train-your-gpt",
+  "summary": "Jupyter Notebook教学项目，从零构建现代LLM，每行代码有中文注释。773星，Jupyter Notebook格式适合交互式学习，覆盖deep-learning/transformer/LLM核心概念，是高质量LLM入门教学资源。",
+  "tags": ["教育", "LLM", "Transformer", "深度学习", "Jupyter"],
+  "status": "draft",
+  "score": 6,
+  "collected_at": "2026-05-09T09:00:00+08:00"
+}

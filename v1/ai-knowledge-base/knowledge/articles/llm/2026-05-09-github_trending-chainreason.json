@@ -1,0 +1,10 @@
+{
+  "id": "github_trending/chainreason",
+  "title": "joshawome/chainreason",
+  "source_url": "https://github.com/joshawome/chainreason",
+  "summary": "评估LLM在以太坊和DeFi任务上推理能力的专用基准。首个聚焦区块链场景的LLM推理评测基准，覆盖以太坊和DeFi领域特化任务，获357星，为Web3+AI交叉研究提供量化评估工具。",
+  "tags": ["区块链", "LLM", "DeFi", "Web3", "基准测试"],
+  "status": "draft",
+  "score": 5,
+  "collected_at": "2026-05-09T09:00:00+08:00"
+}

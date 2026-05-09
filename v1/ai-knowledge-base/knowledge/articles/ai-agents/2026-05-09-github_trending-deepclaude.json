@@ -1,0 +1,10 @@
+{
+  "id": "github_trending/deepclaude",
+  "title": "aattaran/deepclaude",
+  "source_url": "https://github.com/aattaran/deepclaude",
+  "summary": "用Claude Code自治Agent对接DeepSeek V4 Pro后端，将AI Agent运行成本降至1/17。打破Claude Code对Claude Sonnet模型的生态锁定，实现即插即用的降本方案，获1653星，反映开发者对AI Agent降本的强烈刚需。",
+  "tags": ["AI Agent", "降本", "Claude Code", "DeepSeek", "Proxy"],
+  "status": "draft",
+  "score": 7,
+  "collected_at": "2026-05-09T09:00:00+08:00"
+}

@@ -1,0 +1,239 @@
+{
+  "source": "github-trending",
+  "skill": "tech-summary",
+  "analyzed_at": "2026-05-09T09:00:00+08:00",
+  "item_count": 15,
+  "items": [
+    {
+      "name": "antirez/ds4",
+      "url": "https://github.com/antirez/ds4",
+      "summary": "Redis作者用C实现DeepSeek V4 Flash本地推理引擎，Apple Metal优化",
+      "highlights": [
+        "由Redis作者antirez开发，C语言实现Apple Metal GPU加速",
+        "将DeepSeek V4 Flash（MoE架构）跑在个人Apple Silicon笔记本上",
+        "获2934星，显示社区对本地运行前沿模型的强烈需求"
+      ],
+      "score": 8,
+      "score_reason": "Redis作者品质背书+Metal深度优化，让前沿MoE模型本地可跑，工程价值极高",
+      "suggested_tags": ["LLM推理", "DeepSeek", "Apple Metal", "本地部署", "C"]
+    },
+    {
+      "name": "aattaran/deepclaude",
+      "url": "https://github.com/aattaran/deepclaude",
+      "summary": "用Claude Code自治Agent对接DeepSeek V4 Pro，成本降至1/17",
+      "highlights": [
+        "用Claude Code的Agent循环对接DeepSeek V4 Pro后端，成本降至1/17",
+        "打破Claude Code对Claude Sonnet模型的生态锁定",
+        "获1653星，反映开发者对AI Agent降本的强烈刚需"
+      ],
+      "score": 7,
+      "score_reason": "大幅降低AI Agent运行成本，即插即用，但本质是代理/路由方案",
+      "suggested_tags": ["AI Agent", "降本", "Claude Code", "DeepSeek", "Proxy"]
+    },
+    {
+      "name": "strukto-ai/mirage",
+      "url": "https://github.com/strukto-ai/mirage",
+      "summary": "为AI Agent打造的统—虚拟文件系统，支持FUSE挂载和多语言SDK",
+      "highlights": [
+        "支持FUSE内核级挂载，提供类POSIX文件系统接口",
+        "配套Python/TypeScript/Go等多语言SDK",
+        "获1524星，tags包含agent-sandbox/agent-tools/claude-code等生态关键词"
+      ],
+      "score": 7,
+      "score_reason": "填补Agent工具链中文件沙箱基础设施空白，架构设计扎实",
+      "suggested_tags": ["AI Agent", "虚拟文件系统", "沙箱", "LangChain", "Claude Code"]
+    },
+    {
+      "name": "yaojingang/yao-open-prompts",
+      "url": "https://github.com/yaojingang/yao-open-prompts",
+      "summary": "覆盖工作学习营销生活场景的中文AI提示词开源库",
+      "highlights": [
+        "1419星，社区共建的中文Prompt资源库",
+        "覆盖工作、学习、营销、生活等多场景即用模板",
+        "填补中文高质量Prompt Engineering资源空白"
+      ],
+      "score": 5,
+      "score_reason": "实用资源库但不涉及核心技术，技术深度有限",
+      "suggested_tags": ["Prompt Engineering", "中文", "提示词库", "AI应用"]
+    },
+    {
+      "name": "lightseekorg/tokenspeed",
+      "url": "https://github.com/lightseekorg/tokenspeed",
+      "summary": "追求物理极限速度的LLM推理引擎，支持DeepSeek/Qwen/Kimi等主流模型",
+      "highlights": [
+        "号称『光速』推理引擎，支持DeepSeek/Qwen/Kimi等主流模型",
+        "直接挑战vLLM作为主流推理方案的地位",
+        "819星，Blackwell架构优化是关键技术亮点"
+      ],
+      "score": 7,
+      "score_reason": "直接挑战vLLM生态，速度是推理部署的核心指标，值得密切关注",
+      "suggested_tags": ["LLM推理", "推理引擎", "vLLM", "Blackwell", "DeepSeek"]
+    },
+    {
+      "name": "raiyanyahya/how-to-train-your-gpt",
+      "url": "https://github.com/raiyanyahya/how-to-train-your-gpt",
+      "summary": "Jupyter Notebook教学项目，从零构建现代LLM每行代码有注释",
+      "highlights": [
+        "每行代码都有中文注释，从零实现Transformer和GPT",
+        "773星，Jupyter Notebook格式适合交互式学习",
+        "覆盖deep-learning/transformer/LLM核心概念"
+      ],
+      "score": 6,
+      "score_reason": "高质量LLM教学资源，代码注释详尽，适合入门但非生产工具",
+      "suggested_tags": ["教育", "LLM", "Transformer", "深度学习", "Jupyter"]
+    },
+    {
+      "name": "Kappaemme-git/codex-startup-pressure-test-skill",
+      "url": "https://github.com/Kappaemme-git/codex-startup-pressure-test-skill",
+      "summary": "Codex AI Agent技能，对创业想法进行多维度残酷压力测试",
+      "highlights": [
+        "利用Codex AI Agent对创业想法进行结构化压力测试",
+        "734星，展示AI Agent技能生态从编码到商业验证的扩展",
+        "JavaScript实现，属于Agent技能(Skill)生态创新应用"
+      ],
+      "score": 5,
+      "score_reason": "概念新颖但受众有限，依赖Codex生态且商业验证效果待检验",
+      "suggested_tags": ["AI Agent", "创业", "Codex", "技能生态"]
+    },
+    {
+      "name": "jherrodthomas/robotics-skills-suite",
+      "url": "https://github.com/jherrodthomas/robotics-skills-suite",
+      "summary": "76个Claude技能覆盖工业机器人全生命周期，合规就绪",
+      "highlights": [
+        "76个Claude技能覆盖工业机器人设计/仿真/部署/运维全流程",
+        "深度集成ROS2生态，满足工业安全合规要求",
+        "507星，tags包含anthropic/claude/robotics/ros2"
+      ],
+      "score": 7,
+      "score_reason": "将AI Agent引入工业机器人安全认证领域，填补AI+工控空白",
+      "suggested_tags": ["机器人", "Claude Skills", "ROS2", "工业自动化", "AI Agent"]
+    },
+    {
+      "name": "facebookresearch/ProgramBench",
+      "url": "https://github.com/facebookresearch/ProgramBench",
+      "summary": "Meta出品的基准测试，检验LLM能否从零重建整个程序",
+      "highlights": [
+        "Meta AI研究院出品，评估LLM对程序完整语义的理解",
+        "376星，从『程序重建』维度测试而非传统代码生成",
+        "Python实现，为LLM代码能力评估提供新范式"
+      ],
+      "score": 6,
+      "score_reason": "从程序重建角度评估LLM代码理解，视角新颖但属评测工具",
+      "suggested_tags": ["LLM", "基准测试", "代码智能", "Meta AI", "评估"]
+    },
+    {
+      "name": "thcp/stemdeck",
+      "url": "https://github.com/thcp/stemdeck",
+      "summary": "AI驱动的音轨分离平台，可提取人声鼓点贝斯等独立音轨",
+      "highlights": [
+        "AI音轨分离，提取人声/鼓点/贝斯/其他乐器的独立音轨",
+        "370星，JavaScript实现面向非技术用户的直观界面",
+        "让音乐人无需技术背景即可使用AI音频处理"
+      ],
+      "score": 5,
+      "score_reason": "实用工具但AI音频分离赛道成熟，同类产品较多",
+      "suggested_tags": ["AI音频", "音轨分离", "音乐制作", "创意工具"]
+    },
+    {
+      "name": "joshawome/chainreason",
+      "url": "https://github.com/joshawome/chainreason",
+      "summary": "评估LLM在以太坊和DeFi任务上推理能力的专用基准",
+      "highlights": [
+        "首个聚焦区块链场景的LLM推理能力评测基准",
+        "357星，覆盖以太坊和DeFi领域特化任务",
+        "Python实现，为Web3+AI交叉研究提供量化评估工具"
+      ],
+      "score": 5,
+      "score_reason": "领域特化基准，Web3+AI交叉方向有参考价值但受众窄",
+      "suggested_tags": ["区块链", "LLM", "DeFi", "Web3", "基准测试"]
+    },
+    {
+      "name": "butthtio/solidity-cot-auditor",
+      "url": "https://github.com/butthtio/solidity-cot-auditor",
+      "summary": "Chain-of-Thought多角色LLM流水线审计Solidity智能合约安全",
+      "highlights": [
+        "将CoT推理与Slither静态分析工具深度结合审计合约",
+        "350星，多角色LLM流水线模拟审计团队协作流程",
+        "Python实现，提升智能合约审计效率与覆盖面"
+      ],
+      "score": 6,
+      "score_reason": "LLM推理+静态分析结合有实际价值，但依赖Slither且限于Solidity",
+      "suggested_tags": ["智能合约", "安全审计", "Solidity", "CoT", "LLM"]
+    },
+    {
+      "name": "fendouai/CodexSaver",
+      "url": "https://github.com/fendouai/CodexSaver",
+      "summary": "用DeepSeek替代部分Codex调用，即插即用Proxy降低成本",
+      "highlights": [
+        "DeepSeek替代Codex API调用，即插即用Proxy方案",
+        "303星，无需修改应用代码即可切换后端模型",
+        "tags包含codex/deepseek，与deepclaude方向互补"
+      ],
+      "score": 5,
+      "score_reason": "实用降本Proxy，但功能单一，与deepclaude存在功能重叠",
+      "suggested_tags": ["DeepSeek", "Codex", "降本", "Proxy", "API"]
+    },
+    {
+      "name": "huggingface/nanowhale",
+      "url": "https://github.com/huggingface/nanowhale",
+      "summary": "Hugging Face出品1.1亿参数小模型，完整复现DeepSeek V4架构",
+      "highlights": [
+        "仅1.1亿参数完整复现DS V4的MLA+MoE+Hyper-Connections架构",
+        "Hugging Face官方出品，300星，适合学术研究和实验",
+        "极小规模验证前沿架构，降低研究者的实验门槛"
+      ],
+      "score": 7,
+      "score_reason": "极小规模验证DeepSeek V4全套前沿架构，对研究和教育价值显著",
+      "suggested_tags": ["DeepSeek", "小型模型", "MoE", "Hugging Face", "架构研究"]
+    },
+    {
+      "name": "louisedesadeleer/clipify",
+      "url": "https://github.com/louisedesadeleer/clipify",
+      "summary": "Claude Code技能，自动将长视频裁剪为社交平台适配的短视频片段",
+      "highlights": [
+        "利用Claude Code自动化视频后期剪辑流程",
+        "299星，Python实现，面向社交媒体内容创作者",
+        "展示AI Agent在视频制作领域的自动化潜力"
+      ],
+      "score": 5,
+      "score_reason": "展示AI Agent+视频处理方向，但功能单一且依赖Claude Code生态",
+      "suggested_tags": ["视频处理", "Claude Code", "AI Agent", "内容创作"]
+    }
+  ],
+  "trends": {
+    "common_themes": [
+      {
+        "theme": "DeepSeek V4 成为基础设施层，生态辐射加速",
+        "evidence": ["antirez/ds4", "huggingface/nanowhale", "lightseekorg/tokenspeed", "fendouai/CodexSaver"]
+      },
+      {
+        "theme": "AI Agent 工具链与基础设施逐步成型",
+        "evidence": ["strukto-ai/mirage", "jherrodthomas/robotics-skills-suite"]
+      },
+      {
+        "theme": "AI Agent 运行成本优化成为刚需",
+        "evidence": ["aattaran/deepclaude", "fendouai/CodexSaver"]
+      }
+    ],
+    "emerging_concepts": [
+      {
+        "concept": "AI Agent 技能生态从编码扩展到非技术领域（创业验证、工业合规、视频制作）",
+        "evidence": ["Kappaemme-git/codex-startup-pressure-test-skill", "jherrodthomas/robotics-skills-suite", "louisedesadeleer/clipify"]
+      },
+      {
+        "concept": "Apple Silicon 成为本地大模型推理的重要目标平台",
+        "evidence": ["antirez/ds4"]
+      }
+    ],
+    "ecosystem_changes": [
+      {
+        "change": "Claude Code 生态出现第三方扩展与解锁方案，打破模型锁定",
+        "evidence": ["aattaran/deepclaude", "jherrodthomas/robotics-skills-suite"]
+      },
+      {
+        "change": "LLM 评测从通用文本/代码生成向领域特化（区块链、程序理解）纵深发展",
+        "evidence": ["joshawome/chainreason", "facebookresearch/ProgramBench", "butthtio/solidity-cot-auditor"]
+      }
+    ]
+  }
+}

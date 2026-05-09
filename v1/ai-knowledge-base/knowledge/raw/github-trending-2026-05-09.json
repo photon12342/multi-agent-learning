@@ -1,72 +1,128 @@
-[
-  {
-    "title": "Hmbown/DeepSeek-TUI",
-    "url": "https://github.com/Hmbown/DeepSeek-TUI",
-    "source": "github_trending",
-    "popularity": "3,731 stars today",
-    "summary": "DeepSeek 模型的终端编程代理，在命令行中直接与 DeepSeek 交互完成编码任务"
-  },
-  {
-    "title": "anthropics/financial-services",
-    "url": "https://github.com/anthropics/financial-services",
-    "source": "github_trending",
-    "popularity": "3,660 stars today",
-    "summary": "Anthropic 推出的金融服务领域 AI 应用示例和工具集"
-  },
-  {
-    "title": "addyosmani/agent-skills",
-    "url": "https://github.com/addyosmani/agent-skills",
-    "source": "github_trending",
-    "popularity": "1,893 stars today",
-    "summary": "面向 AI 编程代理的生产级工程技能集合，提升代理编码质量"
-  },
-  {
-    "title": "decolua/9router",
-    "url": "https://github.com/decolua/9router",
-    "source": "github_trending",
-    "popularity": "1,052 stars today",
-    "summary": "免费 AI 编码路由，连接 Claude/GPT/Gemini 等 40+ 提供商，自动回 fallback"
-  },
-  {
-    "title": "datawhalechina/hello-agents",
-    "url": "https://github.com/datawhalechina/hello-agents",
-    "source": "github_trending",
-    "popularity": "667 stars today",
-    "summary": "从零开始构建 AI 智能体的原理与实践中文教程"
-  },
-  {
-    "title": "LearningCircuit/local-deep-research",
-    "url": "https://github.com/LearningCircuit/local-deep-research",
-    "source": "github_trending",
-    "popularity": "559 stars today",
-    "summary": "本地深度研究工具，支持本地/云端 LLM，集成 arXiv 等搜索引擎，SimpleQA 达 95%"
-  },
-  {
-    "title": "z-lab/dflash",
-    "url": "https://github.com/z-lab/dflash",
-    "source": "github_trending",
-    "popularity": "379 stars today",
-    "summary": "块扩散闪存推测解码（Block Diffusion），加速 LLM 推理的新方法"
-  },
-  {
-    "title": "HKUDS/AI-Trader",
-    "url": "https://github.com/HKUDS/AI-Trader",
-    "source": "github_trending",
-    "popularity": "202 stars today",
-    "summary": "100% 全自动代理原生交易系统，AI 驱动的量化交易框架"
-  },
-  {
-    "title": "lobehub/lobehub",
-    "url": "https://github.com/lobehub/lobehub",
-    "source": "github_trending",
-    "popularity": "125 stars today",
-    "summary": "下一代智能体协作平台，支持多智能体协作和智能体团队设计"
-  },
-  {
-    "title": "awslabs/aidlc-workflows",
-    "url": "https://github.com/awslabs/aidlc-workflows",
-    "source": "github_trending",
-    "popularity": "58 stars today",
-    "summary": "AWS 推出的 AI 驱动生命周期自适应工作流编排规则，用于 AI 编码代理"
-  }
-]
+{
+  "source": "github-trending",
+  "skill": "github-trending",
+  "collected_at": "2026-05-09T08:32:49+08:00",
+  "count": 15,
+  "items": [
+    {
+      "name": "antirez/ds4",
+      "url": "https://github.com/antirez/ds4",
+      "summary": "antirez/ds4：Redis 作者用 C 实现的 DeepSeek V4 Flash 本地推理引擎，专为 Apple Metal 优化。值得关注因为它将前沿 MoE 模型跑在个人笔记本上，性能出色。",
+      "stars": 2934,
+      "language": "C",
+      "topics": []
+    },
+    {
+      "name": "aattaran/deepclaude",
+      "url": "https://github.com/aattaran/deepclaude",
+      "summary": "aattaran/deepclaude：用 Claude Code 的自治 Agent 循环对接 DeepSeek V4 Pro 等后端，成本降至 1/17。值得关注因为它打破了 Claude Code 的生态锁定，大幅降低 AI Agent 使用成本。",
+      "stars": 1653,
+      "language": "JavaScript",
+      "topics": []
+    },
+    {
+      "name": "strukto-ai/mirage",
+      "url": "https://github.com/strukto-ai/mirage",
+      "summary": "strukto-ai/mirage：为 AI Agent 打造的统—虚拟文件系统，支持 FUSE 挂载和多种语言 SDK。值得关注因为它解决了 Agent 工具链中文件沙箱的关键基础设施问题。",
+      "stars": 1524,
+      "language": "TypeScript",
+      "topics": ["agent-sandbox", "agent-tools", "ai-agents", "claude-code", "langchain", "llm-agents", "virtual-filesystem"]
+    },
+    {
+      "name": "yaojingang/yao-open-prompts",
+      "url": "https://github.com/yaojingang/yao-open-prompts",
+      "summary": "yaojingang/yao-open-prompts：覆盖工作学习营销生活场景的中文 AI 提示词库，开源社区共建。值得关注因为它填补了中文高质量 Prompt 工程资源空白，上手即用。",
+      "stars": 1419,
+      "language": "Python",
+      "topics": ["ai", "chinese-prompts", "prompt-engineering"]
+    },
+    {
+      "name": "lightseekorg/tokenspeed",
+      "url": "https://github.com/lightseekorg/tokenspeed",
+      "summary": "lightseekorg/tokenspeed：号称「光速」的 LLM 推理引擎，支持 DeepSeek/Qwen/Kimi 等主流模型。值得关注因为它追求物理极限的推理速度，直接挑战 vLLM 等主流方案。",
+      "stars": 819,
+      "language": "Python",
+      "topics": ["deepseek", "llm", "tokenspeed", "blackwell", "qwen"]
+    },
+    {
+      "name": "raiyanyahya/how-to-train-your-gpt",
+      "url": "https://github.com/raiyanyahya/how-to-train-your-gpt",
+      "summary": "raiyanyahya/how-to-train-your-gpt：从零构建现代 LLM 的教学项目，每行代码都有注释。值得关注因为它以极低的门槛让开发者理解 Transformer 和 GPT 的内部原理。",
+      "stars": 773,
+      "language": "Jupyter Notebook",
+      "topics": ["deep-learning", "gpt", "llm", "machine-learning", "transformers"]
+    },
+    {
+      "name": "Kappaemme-git/codex-startup-pressure-test-skill",
+      "url": "https://github.com/Kappaemme-git/codex-startup-pressure-test-skill",
+      "summary": "Kappaemme-git/codex-startup-pressure-test-skill：Codex AI Agent 的技能，可对创业想法进行残酷压力测试。值得关注因为它展示了 AI Agent 技能生态的实用方向——用 AI 验证商业假设。",
+      "stars": 734,
+      "language": "JavaScript",
+      "topics": []
+    },
+    {
+      "name": "jherrodthomas/robotics-skills-suite",
+      "url": "https://github.com/jherrodthomas/robotics-skills-suite",
+      "summary": "jherrodthomas/robotics-skills-suite：76 个 Claude 技能覆盖工业机器人全生命周期，合规就绪。值得关注因为它将 AI Agent 引入工业机器人安全认证与 ROS2 开发，填补 AI+工控空白。",
+      "stars": 507,
+      "language": "",
+      "topics": ["anthropic", "claude", "claude-skills", "robotics", "ros2"]
+    },
+    {
+      "name": "facebookresearch/ProgramBench",
+      "url": "https://github.com/facebookresearch/ProgramBench",
+      "summary": "facebookresearch/ProgramBench：Meta 出品的基准测试，检验语言模型能否从零重建程序。值得关注因为它从更深的代码理解维度评估 LLM，而非传统代码生成。",
+      "stars": 376,
+      "language": "Python",
+      "topics": []
+    },
+    {
+      "name": "thcp/stemdeck",
+      "url": "https://github.com/thcp/stemdeck",
+      "summary": "thcp/stemdeck：AI 驱动的音轨分离平台，可提取人声鼓点贝斯等独立音轨。值得关注因为它将 AI 音频处理变成直观工具，音乐人无需技术背景即可使用。",
+      "stars": 370,
+      "language": "JavaScript",
+      "topics": []
+    },
+    {
+      "name": "joshawome/chainreason",
+      "url": "https://github.com/joshawome/chainreason",
+      "summary": "joshawome/chainreason：评估 LLM 在以太坊和 DeFi 任务上推理能力的基准。值得关注因为它是首个聚焦区块链场景的 LLM 推理评测，对 Web3+AI 交叉领域有参考价值。",
+      "stars": 357,
+      "language": "Python",
+      "topics": []
+    },
+    {
+      "name": "butthtio/solidity-cot-auditor",
+      "url": "https://github.com/butthtio/solidity-cot-auditor",
+      "summary": "butthtio/solidity-cot-auditor：基于 Chain-of-Thought 的多角色 LLM 流水线，审计 Solidity 智能合约安全。值得关注因为它将 LLM 推理能力与静态分析工具 Slither 深度结合，提升合约审计效率。",
+      "stars": 350,
+      "language": "Python",
+      "topics": []
+    },
+    {
+      "name": "fendouai/CodexSaver",
+      "url": "https://github.com/fendouai/CodexSaver",
+      "summary": "fendouai/CodexSaver：用 DeepSeek 替代部分 Codex 调用，降低成本而不损失质量。值得关注因为它为大模型 API 降本提供了一个即插即用的 Proxy 方案。",
+      "stars": 303,
+      "language": "Python",
+      "topics": ["codex", "deepseek"]
+    },
+    {
+      "name": "huggingface/nanowhale",
+      "url": "https://github.com/huggingface/nanowhale",
+      "summary": "huggingface/nanowhale：Hugging Face 出品的 1.1 亿参数小型语言模型，完整复现 DeepSeek V4 架构。值得关注因为它用极小规模验证了 MLA+MoE+Hyper-Connections 等前沿技术，适合学习和实验。",
+      "stars": 300,
+      "language": "Python",
+      "topics": []
+    },
+    {
+      "name": "louisedesadeleer/clipify",
+      "url": "https://github.com/louisedesadeleer/clipify",
+      "summary": "louisedesadeleer/clipify：Claude Code 技能，可将长视频自动裁剪为社交平台适配的短视频片段。值得关注因为它展示了 AI Agent 在视频后期制作中的自动化潜力。",
+      "stars": 299,
+      "language": "Python",
+      "topics": []
+    }
+  ]
+}

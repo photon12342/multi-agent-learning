@@ -1,0 +1,10 @@
+{
+  "id": "github_trending/programbench",
+  "title": "facebookresearch/ProgramBench",
+  "source_url": "https://github.com/facebookresearch/ProgramBench",
+  "summary": "Meta出品的基准测试，检验LLM能否从零重建整个程序。Meta AI研究院出品，从程序重建维度评估LLM对完整语义的理解，为LLM代码能力评估提供新范式，获376星。",
+  "tags": ["LLM", "基准测试", "代码智能", "Meta AI", "评估"],
+  "status": "draft",
+  "score": 6,
+  "collected_at": "2026-05-09T09:00:00+08:00"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "github_trending/mirage",
+  "title": "strukto-ai/mirage",
+  "source_url": "https://github.com/strukto-ai/mirage",
+  "summary": "为AI Agent打造的统—虚拟文件系统，支持FUSE挂载和多语言SDK。支持FUSE内核级挂载并提供类POSIX文件系统接口，配套Python/TypeScript/Go等多语言SDK，获1524星，填补Agent工具链中文件沙箱基础设施空白。",
+  "tags": ["AI Agent", "虚拟文件系统", "沙箱", "LangChain", "Claude Code"],
+  "status": "draft",
+  "score": 7,
+  "collected_at": "2026-05-09T09:00:00+08:00"
+}

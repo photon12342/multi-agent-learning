@@ -1,0 +1,10 @@
+{
+  "id": "github_trending/nanowhale",
+  "title": "huggingface/nanowhale",
+  "source_url": "https://github.com/huggingface/nanowhale",
+  "summary": "Hugging Face出品1.1亿参数小模型，完整复现DeepSeek V4架构。仅1.1亿参数完整复现MLA+MoE+Hyper-Connections架构，极小规模验证前沿技术，降低研究者实验门槛，获300星。",
+  "tags": ["DeepSeek", "小型模型", "MoE", "Hugging Face", "架构研究"],
+  "status": "draft",
+  "score": 7,
+  "collected_at": "2026-05-09T09:00:00+08:00"
+}

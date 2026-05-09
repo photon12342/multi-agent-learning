@@ -1,0 +1,10 @@
+{
+  "id": "github_trending/robotics-skills-suite",
+  "title": "jherrodthomas/robotics-skills-suite",
+  "source_url": "https://github.com/jherrodthomas/robotics-skills-suite",
+  "summary": "76个Claude技能覆盖工业机器人全生命周期，合规就绪。深度集成ROS2生态，满足工业安全合规要求，覆盖设计/仿真/部署/运维全流程，获507星，将AI Agent引入工业机器人安全认证领域。",
+  "tags": ["机器人", "Claude Skills", "ROS2", "工业自动化", "AI Agent"],
+  "status": "draft",
+  "score": 7,
+  "collected_at": "2026-05-09T09:00:00+08:00"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "github_trending/codexsaver",
+  "title": "fendouai/CodexSaver",
+  "source_url": "https://github.com/fendouai/CodexSaver",
+  "summary": "用DeepSeek替代部分Codex调用，即插即用Proxy降低成本。DeepSeek替代Codex API调用，无需修改应用代码即可切换后端模型，获303星，与deepclaude方向互补。",
+  "tags": ["DeepSeek", "Codex", "降本", "Proxy", "API"],
+  "status": "draft",
+  "score": 5,
+  "collected_at": "2026-05-09T09:00:00+08:00"
+}

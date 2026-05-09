@@ -1,0 +1,10 @@
+{
+  "id": "github_trending/stemdeck",
+  "title": "thcp/stemdeck",
+  "source_url": "https://github.com/thcp/stemdeck",
+  "summary": "AI驱动的音轨分离平台，可提取人声鼓点贝斯等独立音轨。370星，JavaScript实现面向非技术用户的直观界面，让音乐人无需技术背景即可使用AI音频处理。",
+  "tags": ["AI音频", "音轨分离", "音乐制作", "创意工具"],
+  "status": "draft",
+  "score": 5,
+  "collected_at": "2026-05-09T09:00:00+08:00"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "github_trending/solidity-cot-auditor",
+  "title": "butthtio/solidity-cot-auditor",
+  "source_url": "https://github.com/butthtio/solidity-cot-auditor",
+  "summary": "Chain-of-Thought多角色LLM流水线审计Solidity智能合约安全。将CoT推理与Slither静态分析工具深度结合，多角色LLM流水线模拟审计团队协作流程，获350星，提升智能合约审计效率与覆盖面。",
+  "tags": ["智能合约", "安全审计", "Solidity", "CoT", "LLM"],
+  "status": "draft",
+  "score": 6,
+  "collected_at": "2026-05-09T09:00:00+08:00"
+}

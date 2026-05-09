@@ -1,0 +1,10 @@
+{
+  "id": "github_trending/ds4",
+  "title": "antirez/ds4",
+  "source_url": "https://github.com/antirez/ds4",
+  "summary": "Redis作者用C实现DeepSeek V4 Flash本地推理引擎，Apple Metal优化。由Redis作者antirez开发，C语言实现Apple Metal GPU加速，将DeepSeek V4 Flash（MoE架构）跑在个人Apple Silicon笔记本上，获2934星，显示社区对本地运行前沿模型的强烈需求。",
+  "tags": ["LLM推理", "DeepSeek", "Apple Metal", "本地部署", "C"],
+  "status": "draft",
+  "score": 8,
+  "collected_at": "2026-05-09T09:00:00+08:00"
+}

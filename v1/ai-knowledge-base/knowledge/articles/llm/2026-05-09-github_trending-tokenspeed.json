@@ -1,0 +1,10 @@
+{
+  "id": "github_trending/tokenspeed",
+  "title": "lightseekorg/tokenspeed",
+  "source_url": "https://github.com/lightseekorg/tokenspeed",
+  "summary": "追求物理极限速度的LLM推理引擎，支持DeepSeek/Qwen/Kimi等主流模型。号称『光速』推理引擎，直接挑战vLLM作为主流推理方案的地位，Blackwell架构优化是关键技术亮点，获819星。",
+  "tags": ["LLM推理", "推理引擎", "vLLM", "Blackwell", "DeepSeek"],
+  "status": "draft",
+  "score": 7,
+  "collected_at": "2026-05-09T09:00:00+08:00"
+}
