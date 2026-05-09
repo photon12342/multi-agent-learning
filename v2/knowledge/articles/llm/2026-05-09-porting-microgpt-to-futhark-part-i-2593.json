@@ -1,0 +1,23 @@
+{
+  "id": "2026-05-09-porting-microgpt-to-futhark-part-i-2593",
+  "title": "将microgpt移植到Futhark语言，探索函数式GPU编程在小型GPT模型上的应用。",
+  "source": "rss",
+  "url": "https://www.kmjn.org/notes/microgpt_futhark.html",
+  "collected_at": "2026-05-09T13:41:33Z",
+  "summary": "将microgpt移植到Futhark语言，探索函数式GPU编程在小型GPT模型上的应用。",
+  "highlights": [
+    "项目将微型GPT模型移植到Futhark，一种数据并行函数式语言",
+    "Futhark可编译为高效GPU代码，适合深度学习推理",
+    "该移植展示了Futhark在小型神经网络上的可行性"
+  ],
+  "score": 6,
+  "score_reason": "技术探索有价值，但规模小且未涉及训练，适合对Futhark或GPU编程感兴趣者。",
+  "tags": [
+    "futhark",
+    "gpt",
+    "gpu",
+    "functional-programming",
+    "deep-learning"
+  ],
+  "relevance_score": 0.6
+}

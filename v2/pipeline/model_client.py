@@ -317,6 +317,26 @@ def chat_with_retry(
 
 
 # ---------------------------------------------------------------------------
+# Factory function
+# ---------------------------------------------------------------------------
+
+
+def create_provider(provider_name: str | None = None) -> OpenAICompatibleProvider:
+    """Create an LLM provider from environment config.
+
+    Args:
+        provider_name: Provider name (deepseek/qwen/openai).
+            Defaults to LLM_PROVIDER env var or 'deepseek'.
+
+    Returns:
+        An initialized OpenAICompatibleProvider.
+    """
+    if provider_name is None:
+        provider_name = os.environ.get("LLM_PROVIDER", DEFAULT_PROVIDER)
+    return OpenAICompatibleProvider(provider_name=provider_name)
+
+
+# ---------------------------------------------------------------------------
 # Convenience function
 # ---------------------------------------------------------------------------
 

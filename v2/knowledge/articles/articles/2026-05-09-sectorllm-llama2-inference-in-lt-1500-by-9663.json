@@ -1,0 +1,23 @@
+{
+  "id": "2026-05-09-sectorllm-llama2-inference-in-lt-1500-by-9663",
+  "title": "用极简x86汇编实现Llama2推理，仅需1500字节，展示极致优化。",
+  "source": "rss",
+  "url": "https://github.com/rdmsr/sectorllm",
+  "collected_at": "2026-05-09T13:41:33Z",
+  "summary": "用极简x86汇编实现Llama2推理，仅需1500字节，展示极致优化。",
+  "highlights": [
+    "1500字节x86汇编实现Llama2推理",
+    "极低资源占用，挑战传统推理框架",
+    "开源项目，代码精简至极致"
+  ],
+  "score": 8,
+  "score_reason": "技术突破性强，展示极简实现的创新价值，但实用性有限。",
+  "tags": [
+    "llama2",
+    "x86",
+    "assembly",
+    "inference",
+    "optimization"
+  ],
+  "relevance_score": 0.8
+}

@@ -1,0 +1,22 @@
+{
+  "id": "2026-05-09-on-the-limits-of-self-improving-in-large-7650",
+  "title": "论文探讨大语言模型自我改进的极限，指出无符号模型合成则奇点不会临近。",
+  "source": "rss",
+  "url": "https://arxiv.org/html/2601.05280v2",
+  "collected_at": "2026-05-09T13:41:33Z",
+  "summary": "论文探讨大语言模型自我改进的极限，指出无符号模型合成则奇点不会临近。",
+  "highlights": [
+    "提出符号模型合成是突破自我改进瓶颈的关键",
+    "质疑当前LLM自我改进能力的上限",
+    "强调符号系统在AI发展中的核心作用"
+  ],
+  "score": 7,
+  "score_reason": "对LLM自我改进极限提出重要理论分析，具有前瞻性，但缺乏实证数据。",
+  "tags": [
+    "llm",
+    "self-improvement",
+    "symbolic-reasoning",
+    "ai-limits"
+  ],
+  "relevance_score": 0.7
+}

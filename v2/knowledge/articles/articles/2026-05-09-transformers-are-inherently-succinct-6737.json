@@ -1,0 +1,23 @@
+{
+  "id": "2026-05-09-transformers-are-inherently-succinct-6737",
+  "title": "证明Transformer在表达能力上比有限自动机和LTL更简洁，但验证其属性是EXPSPACE完全的。",
+  "source": "rss",
+  "url": "https://arxiv.org/abs/2510.19315",
+  "collected_at": "2026-05-09T13:41:33Z",
+  "summary": "证明Transformer在表达能力上比有限自动机和LTL更简洁，但验证其属性是EXPSPACE完全的。",
+  "highlights": [
+    "提出简洁性作为Transformer表达能力的度量",
+    "证明Transformer比有限自动机和LTL更简洁地表示形式语言",
+    "验证Transformer属性是EXPSPACE完全的，表明计算上不可处理"
+  ],
+  "score": 7,
+  "score_reason": "理论贡献显著，揭示了Transformer的表达优势与验证复杂性，但缺乏实际应用验证。",
+  "tags": [
+    "transformer",
+    "expressivity",
+    "formal languages",
+    "complexity",
+    "succinctness"
+  ],
+  "relevance_score": 0.7
+}

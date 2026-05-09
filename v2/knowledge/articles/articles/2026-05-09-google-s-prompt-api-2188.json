@@ -1,0 +1,22 @@
+{
+  "id": "2026-05-09-google-s-prompt-api-2188",
+  "title": "Google推出Prompt API，为开发者提供高效构建和优化提示词的工具。",
+  "source": "rss",
+  "url": "https://wil.to/posts/googles-prompt-api/",
+  "collected_at": "2026-05-09T13:41:33Z",
+  "summary": "Google推出Prompt API，为开发者提供高效构建和优化提示词的工具。",
+  "highlights": [
+    "Google发布Prompt API，简化提示词工程",
+    "支持多种模型和场景",
+    "提供优化建议和调试功能"
+  ],
+  "score": 7,
+  "score_reason": "该API对AI开发有实用价值，但非突破性创新",
+  "tags": [
+    "google",
+    "prompt-api",
+    "ai",
+    "developer-tools"
+  ],
+  "relevance_score": 0.7
+}

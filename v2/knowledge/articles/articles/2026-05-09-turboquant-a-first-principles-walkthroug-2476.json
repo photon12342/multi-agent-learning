@@ -1,0 +1,22 @@
+{
+  "id": "2026-05-09-turboquant-a-first-principles-walkthroug-2476",
+  "title": "TurboQuant从第一性原理出发，系统讲解量化交易核心概念与实现方法。",
+  "source": "rss",
+  "url": "https://arkaung.github.io/interactive-turboquant/",
+  "collected_at": "2026-05-09T13:41:33Z",
+  "summary": "TurboQuant从第一性原理出发，系统讲解量化交易核心概念与实现方法。",
+  "highlights": [
+    "基于第一性原理构建量化交易知识体系",
+    "覆盖从数据获取到策略回测的完整流程",
+    "提供可运行的代码示例与实战案例"
+  ],
+  "score": 6,
+  "score_reason": "内容系统但缺乏创新性，适合入门学习。",
+  "tags": [
+    "quantitative-trading",
+    "algorithmic-trading",
+    "tutorial",
+    "python"
+  ],
+  "relevance_score": 0.6
+}
