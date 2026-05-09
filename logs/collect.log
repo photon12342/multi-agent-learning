@@ -1,0 +1,214 @@
+usage: pipeline.py [-h] [--sources SOURCES] [--limit LIMIT] [--dry-run]
+                   [--verbose]
+pipeline.py: error: unrecognized arguments: --step 1 --step 2
+2026-05-09 22:52:31,377 [INFO] pipeline: 
+2026-05-09 22:52:31,377 [INFO] pipeline: ========================================================
+2026-05-09 22:52:31,377 [INFO] pipeline:   AI 知识库自动化流水线  v2
+2026-05-09 22:52:31,377 [INFO] pipeline: ========================================================
+2026-05-09 22:52:31,377 [INFO] pipeline: 
+2026-05-09 22:52:31,377 [INFO] pipeline: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-05-09 22:52:31,377 [INFO] pipeline:   Step 1/4：采集数据
+2026-05-09 22:52:31,377 [INFO] pipeline: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-05-09 22:52:31,378 [INFO] pipeline:   → 正在查询 GitHub Trending，时间范围 2026-05-02 至今，上限 20 条
+2026-05-09 22:52:32,694 [INFO] httpx: HTTP Request: GET https://api.github.com/search/repositories?q=ai%2BOR%2Bllm%2BOR%2Bagent%2BOR%2Bmachine-learning%2BOR%2Bdeep-learning%2Bcreated%3A%3E2026-05-02&sort=stars&order=desc&per_page=20 "HTTP/1.1 200 OK"
+2026-05-09 22:52:32,706 [INFO] pipeline:   ✓ 采集到 0 个 GitHub 项目
+2026-05-09 22:52:32,712 [INFO] pipeline:   → 正在抓取 RSS：Lobsters AI/ML
+2026-05-09 22:52:33,924 [INFO] httpx: HTTP Request: GET https://lobste.rs/t/ai.rss "HTTP/1.1 200 OK"
+2026-05-09 22:52:33,929 [INFO] pipeline:     ✓ 从「Lobsters AI/ML」获取到 25 条
+2026-05-09 22:52:33,929 [INFO] pipeline:   ✓ 采集到 20 条 RSS 内容
+2026-05-09 22:52:33,932 [INFO] pipeline:   ■ 原始数据已暂存：knowledge/raw/pipeline-raw-2026-05-09.json（共 20 条）
+2026-05-09 22:52:33,932 [INFO] pipeline: 
+2026-05-09 22:52:33,932 [INFO] pipeline: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-05-09 22:52:33,932 [INFO] pipeline:   Step 2/4：LLM 深度分析
+2026-05-09 22:52:33,932 [INFO] pipeline: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-05-09 22:52:33,965 [INFO] model_client: Initialized deepseek provider (model=deepseek-chat, endpoint=https://api.deepseek.com/v1)
+2026-05-09 22:52:33,965 [INFO] pipeline:   [ 1/20] 正在分析：Mojo v1.0.0b1
+2026-05-09 22:52:34,079 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-09 22:52:37,188 [INFO] pipeline:     ✓ 评分 8/10 — 首个beta版本对AI和系统编程社区有重要价值，但尚未正式发布。
+2026-05-09 22:52:37,690 [INFO] pipeline:   [ 2/20] 正在分析：jlearn: Machine Learning Library in J
+2026-05-09 22:52:37,774 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-09 22:52:40,068 [INFO] pipeline:     ✓ 评分 2/10 — 项目缺乏成熟度和社区支持，仅对J语言爱好者有参考价值。
+2026-05-09 22:52:40,572 [INFO] pipeline:   [ 3/20] 正在分析：Google’s Prompt API
+2026-05-09 22:52:40,702 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-09 22:52:42,893 [INFO] pipeline:     ✓ 评分 5/10 — 值得了解，但信息有限且缺乏具体数据支持。
+2026-05-09 22:52:43,398 [INFO] pipeline:   [ 4/20] 正在分析：Open weights are quietly closing up - and that's a problem
+2026-05-09 22:52:43,544 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-09 22:52:46,482 [INFO] pipeline:     ✓ 评分 6/10 — 涉及开源生态重要趋势，但缺乏具体数据支撑，值得关注但非里程碑
+2026-05-09 22:52:46,983 [INFO] pipeline:   [ 5/20] 正在分析：sectorllm: llama2 inference in &lt; 1500 bytes of x86 assembly
+2026-05-09 22:52:47,061 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-09 22:52:49,896 [INFO] pipeline:     ✓ 评分 7/10 — 技术实现极具创新性和挑战性，但实际应用价值有限。
+2026-05-09 22:52:50,401 [INFO] pipeline:   [ 6/20] 正在分析：Why a Decade of Writing Detection Logic Makes the Mythos Exploit Numbers Less Scary
+2026-05-09 22:52:50,486 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-09 22:52:53,294 [INFO] pipeline:     ✓ 评分 6/10 — 提供有价值的防御视角，但缺乏具体数据支撑，适合安全从业者参考。
+2026-05-09 22:52:53,799 [INFO] pipeline:   [ 7/20] 正在分析：OpenMythos: A theoretical reconstruction of the Claude Mythos architecture, built from first principles using the available research literature
+2026-05-09 22:52:53,943 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-09 22:52:56,773 [INFO] pipeline:     ✓ 评分 5/10 — 理论重构有学术价值，但缺乏实证和社区认可。
+2026-05-09 22:52:57,280 [INFO] pipeline:   [ 8/20] 正在分析：Do AI summaries hurt critical thinking?
+2026-05-09 22:52:57,479 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-09 22:52:59,792 [INFO] pipeline:     ✓ 评分 6/10 — 话题具有启发性，但缺乏具体数据支撑，属于值得了解的讨论。
+2026-05-09 22:53:00,296 [INFO] pipeline:   [ 9/20] 正在分析：Porting microgpt to Futhark, Part I
+2026-05-09 22:53:01,532 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-09 22:53:04,607 [INFO] pipeline:     ✓ 评分 6/10 — 技术探索有价值，但缺乏具体性能数据和实际成果，适合关注Futhark和GPU编程的读者。
+2026-05-09 22:53:05,112 [INFO] pipeline:   [10/20] 正在分析：Where the goblins came from
+2026-05-09 22:53:05,205 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-09 22:53:07,785 [INFO] pipeline:     ✓ 评分 4/10 — 缺乏具体技术内容，仅为一个链接和标题，价值有限。
+2026-05-09 22:53:08,290 [INFO] pipeline:   [11/20] 正在分析：Scaling Pain of Coding Agent Serving: Lessons from Debugging GLM-5 at Scale
+2026-05-09 22:53:08,382 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-09 22:53:11,051 [INFO] pipeline:     ✓ 评分 7/10 — 对大规模AI服务部署有实际指导价值，但缺乏具体数据支撑。
+2026-05-09 22:53:11,553 [INFO] pipeline:   [12/20] 正在分析：AI Terminology is Poorly Defined and Oft Misused
+2026-05-09 22:53:11,727 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-09 22:53:14,299 [INFO] pipeline:     ✓ 评分 6/10 — 问题重要但讨论常见，缺乏新数据或解决方案
+2026-05-09 22:53:14,802 [INFO] pipeline:   [13/20] 正在分析：Localisation Engineering Platform
+2026-05-09 22:53:14,891 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-09 22:53:17,303 [INFO] pipeline:     ✓ 评分 5/10 — 项目描述信息有限，缺乏具体数据支撑，但主题有实用价值。
+2026-05-09 22:53:17,808 [INFO] pipeline:   [14/20] 正在分析：Triton language for Huawei Ascend
+2026-05-09 22:53:17,913 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-09 22:53:20,684 [INFO] pipeline:     ✓ 评分 6/10 — 技术方向有价值，但项目尚处早期，影响力有限。
+2026-05-09 22:53:21,189 [INFO] pipeline:   [15/20] 正在分析：Introducing talkie: a 13B vintage language model from 1930
+2026-05-09 22:53:21,604 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-09 22:53:23,757 [INFO] pipeline:     ✓ 评分 5/10 — 模型概念有趣但缺乏具体技术细节和实际应用验证。
+2026-05-09 22:53:24,261 [INFO] pipeline:   [16/20] 正在分析：On the Limits of Self-Improving in Large Language Models: The Singularity Is Not Near Without Symbolic Model Synthesis
+2026-05-09 22:53:24,335 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-09 22:53:27,135 [INFO] pipeline:     ✓ 评分 7/10 — 对LLM自我改进能力提出重要理论限制，但缺乏实证数据支持。
+2026-05-09 22:53:27,636 [INFO] pipeline:   [17/20] 正在分析：TurboQuant: A First-Principles Walkthrough
+2026-05-09 22:53:27,720 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-09 22:53:30,616 [INFO] pipeline:     ✓ 评分 6/10 — 内容系统全面，适合量化交易入门者，但缺乏创新性突破。
+2026-05-09 22:53:31,121 [INFO] pipeline:   [18/20] 正在分析：Transformers are Inherently Succinct
+2026-05-09 22:53:31,364 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-09 22:53:34,352 [INFO] pipeline:     ✓ 评分 7/10 — 理论贡献显著，揭示了Transformer的表达力与计算复杂性权衡，对形式语言和验证领域有重要启示。
+2026-05-09 22:53:34,853 [INFO] pipeline:   [19/20] 正在分析：Build yourself flowers
+2026-05-09 22:53:34,982 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-09 22:53:37,165 [INFO] pipeline:     ✓ 评分 4/10 — 信息不完整，缺乏具体技术内容或数据支撑。
+2026-05-09 22:53:37,670 [INFO] pipeline:   [20/20] 正在分析：Reversing SynthID
+2026-05-09 22:53:37,749 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-09 22:53:40,858 [INFO] pipeline:     ✓ 评分 7/10 — 对AI安全领域有实际参考价值，但技术细节未公开完整。
+2026-05-09 22:53:41,361 [INFO] pipeline:   ✓ 分析完成：共 20 条
+2026-05-09 22:53:41,368 [INFO] pipeline: 
+2026-05-09 22:53:41,368 [INFO] pipeline: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-05-09 22:53:41,368 [INFO] pipeline:   Step 3/4：去重 + 质量门控
+2026-05-09 22:53:41,368 [INFO] pipeline: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-05-09 22:53:41,371 [INFO] pipeline:   - 已存在，跳过：Mojo v1.0.0b1
+2026-05-09 22:53:41,371 [INFO] pipeline:   ✗ 评分 2，未达 6 分门槛，丢弃：jlearn: Machine Learning Library in J
+2026-05-09 22:53:41,372 [INFO] pipeline:   ✗ 评分 5，未达 6 分门槛，丢弃：Google’s Prompt API
+2026-05-09 22:53:41,372 [INFO] pipeline:   - 已存在，跳过：Open weights are quietly closing up - and that's a problem
+2026-05-09 22:53:41,372 [INFO] pipeline:   - 已存在，跳过：sectorllm: llama2 inference in &lt; 1500 bytes of x86 assembly
+2026-05-09 22:53:41,372 [INFO] pipeline:   - 已存在，跳过：Why a Decade of Writing Detection Logic Makes the Mythos Exploit Numbers Less Scary
+2026-05-09 22:53:41,372 [INFO] pipeline:   ✗ 评分 5，未达 6 分门槛，丢弃：OpenMythos: A theoretical reconstruction of the Claude Mythos architecture, built from first principles using the available research literature
+2026-05-09 22:53:41,372 [INFO] pipeline:   - 已存在，跳过：Do AI summaries hurt critical thinking?
+2026-05-09 22:53:41,372 [INFO] pipeline:   - 已存在，跳过：Porting microgpt to Futhark, Part I
+2026-05-09 22:53:41,372 [INFO] pipeline:   ✗ 评分 4，未达 6 分门槛，丢弃：Where the goblins came from
+2026-05-09 22:53:41,372 [INFO] pipeline:   - 已存在，跳过：Scaling Pain of Coding Agent Serving: Lessons from Debugging GLM-5 at Scale
+2026-05-09 22:53:41,372 [INFO] pipeline:   - 已存在，跳过：AI Terminology is Poorly Defined and Oft Misused
+2026-05-09 22:53:41,373 [INFO] pipeline:   ✗ 评分 5，未达 6 分门槛，丢弃：Localisation Engineering Platform
+2026-05-09 22:53:41,378 [INFO] pipeline:   ✓ 通过质量门控：2026-05-09-triton-language-for-huawei-ascend-3565（评分 6）
+2026-05-09 22:53:41,378 [INFO] pipeline:   ✗ 评分 5，未达 6 分门槛，丢弃：Introducing talkie: a 13B vintage language model from 1930
+2026-05-09 22:53:41,378 [INFO] pipeline:   - 已存在，跳过：On the Limits of Self-Improving in Large Language Models: The Singularity Is Not Near Without Symbolic Model Synthesis
+2026-05-09 22:53:41,379 [INFO] pipeline:   - 已存在，跳过：TurboQuant: A First-Principles Walkthrough
+2026-05-09 22:53:41,379 [INFO] pipeline:   - 已存在，跳过：Transformers are Inherently Succinct
+2026-05-09 22:53:41,379 [INFO] pipeline:   ✗ 评分 4，未达 6 分门槛，丢弃：Build yourself flowers
+2026-05-09 22:53:41,379 [INFO] pipeline:   - 已存在，跳过：Reversing SynthID
+2026-05-09 22:53:41,379 [INFO] pipeline:   ⚠ 丢弃 7 条（评分 < 6）
+2026-05-09 22:53:41,379 [INFO] pipeline:   - 跳过 12 条重复内容
+2026-05-09 22:53:41,379 [INFO] pipeline:   ✓ 整理完毕：1 条进入保存阶段
+2026-05-09 22:53:41,379 [INFO] pipeline: 
+2026-05-09 22:53:41,379 [INFO] pipeline: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-05-09 22:53:41,379 [INFO] pipeline:   Step 4/4：写入知识库
+2026-05-09 22:53:41,379 [INFO] pipeline: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-05-09 22:53:41,381 [INFO] pipeline:   ✓ 已保存：knowledge/articles/articles/2026-05-09-triton-language-for-huawei-ascend-3565.json
+2026-05-09 22:53:41,382 [INFO] pipeline:   ✓ 索引已更新：knowledge/articles/index.json（共 25 条记录）
+2026-05-09 22:53:41,383 [INFO] pipeline:   ✓ 本次新增 1 篇文章
+2026-05-09 22:53:41,383 [INFO] pipeline: 
+2026-05-09 22:53:41,383 [INFO] pipeline: ========================================================
+2026-05-09 22:53:41,383 [INFO] pipeline:   流水线执行完毕（70.0 秒）
+2026-05-09 22:53:41,383 [INFO] pipeline:   采集 20 条 → 分析 20 条 → 入库 1 篇
+2026-05-09 22:53:41,383 [INFO] pipeline: ========================================================
+2026-05-09 22:53:41,383 [INFO] pipeline: 
+2026-05-09 23:01:44,302 [INFO] pipeline: 
+2026-05-09 23:01:44,313 [INFO] pipeline: ========================================================
+2026-05-09 23:01:44,313 [INFO] pipeline:   AI 知识库自动化流水线  v2  [Step 1, Step 2]
+2026-05-09 23:01:44,313 [INFO] pipeline: ========================================================
+2026-05-09 23:01:44,313 [INFO] pipeline: 
+2026-05-09 23:01:44,314 [INFO] pipeline: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-05-09 23:01:44,314 [INFO] pipeline:   Step 1/4：采集数据
+2026-05-09 23:01:44,314 [INFO] pipeline: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-05-09 23:01:44,314 [INFO] pipeline:   → 正在查询 GitHub Trending，时间范围 2026-05-02 至今，上限 20 条
+2026-05-09 23:01:45,578 [INFO] httpx: HTTP Request: GET https://api.github.com/search/repositories?q=ai%2BOR%2Bllm%2BOR%2Bagent%2BOR%2Bmachine-learning%2BOR%2Bdeep-learning%2Bcreated%3A%3E2026-05-02&sort=stars&order=desc&per_page=20 "HTTP/1.1 200 OK"
+2026-05-09 23:01:45,582 [INFO] pipeline:   ✓ 采集到 0 个 GitHub 项目
+2026-05-09 23:01:45,585 [INFO] pipeline:   → 正在抓取 RSS：Lobsters AI/ML
+2026-05-09 23:01:47,225 [INFO] httpx: HTTP Request: GET https://lobste.rs/t/ai.rss "HTTP/1.1 200 OK"
+2026-05-09 23:01:47,231 [INFO] pipeline:     ✓ 从「Lobsters AI/ML」获取到 25 条
+2026-05-09 23:01:47,231 [INFO] pipeline:   ✓ 采集到 20 条 RSS 内容
+2026-05-09 23:01:47,232 [INFO] pipeline:   ■ 原始数据已暂存：knowledge/raw/pipeline-raw-2026-05-09.json（共 20 条）
+2026-05-09 23:01:47,233 [INFO] pipeline: 
+2026-05-09 23:01:47,233 [INFO] pipeline: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-05-09 23:01:47,233 [INFO] pipeline:   Step 2/4：LLM 深度分析
+2026-05-09 23:01:47,233 [INFO] pipeline: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-05-09 23:01:47,265 [INFO] model_client: Initialized deepseek provider (model=deepseek-chat, endpoint=https://api.deepseek.com/v1)
+2026-05-09 23:01:47,265 [INFO] pipeline:   [ 1/20] 正在分析：Mojo v1.0.0b1
+2026-05-09 23:01:47,394 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-09 23:01:50,076 [INFO] pipeline:     ✓ 评分 5/10 — 版本更新值得关注，但缺乏具体特性数据和社区热度支撑。
+2026-05-09 23:01:50,581 [INFO] pipeline:   [ 2/20] 正在分析：jlearn: Machine Learning Library in J
+2026-05-09 23:01:50,670 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-09 23:01:53,225 [INFO] pipeline:     ✓ 评分 2/10 — 项目处于极早期，缺乏实质性内容和社区认可，可略过。
+2026-05-09 23:01:53,730 [INFO] pipeline:   [ 3/20] 正在分析：Google’s Prompt API
+2026-05-09 23:01:53,835 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-09 23:01:56,187 [INFO] pipeline:     ✓ 评分 6/10 — 值得了解，但缺乏具体技术细节和实际应用案例。
+2026-05-09 23:01:56,691 [INFO] pipeline:   [ 4/20] 正在分析：Open weights are quietly closing up - and that's a problem
+2026-05-09 23:01:56,831 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-09 23:01:59,545 [INFO] pipeline:     ✓ 评分 6/10 — 涉及开源AI生态重要变化，值得关注但非即时里程碑
+2026-05-09 23:02:00,048 [INFO] pipeline:   [ 5/20] 正在分析：sectorllm: llama2 inference in &lt; 1500 bytes of x86 assembly
+2026-05-09 23:02:00,829 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-09 23:02:03,229 [INFO] pipeline:     ✓ 评分 8/10 — 极简实现展示技术深度，对嵌入式或资源受限场景有启发价值。
+2026-05-09 23:02:03,730 [INFO] pipeline:   [ 6/20] 正在分析：Why a Decade of Writing Detection Logic Makes the Mythos Exploit Numbers Less Scary
+2026-05-09 23:02:03,826 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-09 23:02:06,759 [INFO] pipeline:     ✓ 评分 7/10 — 提供独特视角，对安全从业者有启发，但缺乏具体数据支撑。
+2026-05-09 23:02:07,262 [INFO] pipeline:   [ 7/20] 正在分析：OpenMythos: A theoretical reconstruction of the Claude Mythos architecture, built from first principles using the available research literature
+2026-05-09 23:02:07,336 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-09 23:02:10,383 [INFO] pipeline:     ✓ 评分 5/10 — 理论重建有启发性，但缺乏实证数据和实际应用验证。
+2026-05-09 23:02:10,889 [INFO] pipeline:   [ 8/20] 正在分析：Do AI summaries hurt critical thinking?
+2026-05-09 23:02:11,010 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-09 23:02:13,733 [INFO] pipeline:     ✓ 评分 6/10 — 话题具有讨论价值，但缺乏具体数据支撑，属于值得了解层面。
+2026-05-09 23:02:14,238 [INFO] pipeline:   [ 9/20] 正在分析：Porting microgpt to Futhark, Part I
+2026-05-09 23:02:14,317 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-09 23:02:17,067 [INFO] pipeline:     ✓ 评分 6/10 — 技术移植有参考价值，但缺乏具体成果和性能数据
+2026-05-09 23:02:17,588 [INFO] pipeline:   [10/20] 正在分析：Where the goblins came from
+2026-05-09 23:02:17,725 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-09 23:02:20,102 [INFO] pipeline:     ✓ 评分 4/10 — 信息有限，缺乏具体内容，仅为一个链接标题，价值较低。
+2026-05-09 23:02:20,602 [INFO] pipeline:   [11/20] 正在分析：Scaling Pain of Coding Agent Serving: Lessons from Debugging GLM-5 at Scale
+2026-05-09 23:02:20,688 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-09 23:02:23,850 [INFO] pipeline:     ✓ 评分 7/10 — 提供了实际大规模部署的宝贵经验，对技术团队有较高参考价值
+2026-05-09 23:02:24,351 [INFO] pipeline:   [12/20] 正在分析：AI Terminology is Poorly Defined and Oft Misused
+2026-05-09 23:02:24,433 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-09 23:02:27,205 [INFO] pipeline:     ✓ 评分 6/10 — 主题有讨论价值，但缺乏具体数据和案例支撑，属于值得了解但非核心突破。
+2026-05-09 23:02:27,710 [INFO] pipeline:   [13/20] 正在分析：Localisation Engineering Platform
+2026-05-09 23:02:27,827 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-09 23:02:30,142 [INFO] pipeline:     ✓ 评分 1/10 — 信息极度匮乏，无实际内容可评估
+2026-05-09 23:02:30,642 [INFO] pipeline:   [14/20] 正在分析：Triton language for Huawei Ascend
+2026-05-09 23:02:30,728 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-09 23:02:33,043 [INFO] pipeline:     ✓ 评分 5/10 — 技术适配有价值但缺乏具体进展和社区关注度
+2026-05-09 23:02:33,544 [INFO] pipeline:   [15/20] 正在分析：Introducing talkie: a 13B vintage language model from 1930
+2026-05-09 23:02:33,631 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-09 23:02:36,029 [INFO] pipeline:     ✓ 评分 5/10 — 模型规模中等但复古风格独特，值得了解但非里程碑。
+2026-05-09 23:02:36,531 [INFO] pipeline:   [16/20] 正在分析：On the Limits of Self-Improving in Large Language Models: The Singularity Is Not Near Without Symbolic Model Synthesis
+2026-05-09 23:02:36,611 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-09 23:02:39,220 [INFO] pipeline:     ✓ 评分 7/10 — 对LLM自我改进路径有深刻洞察，但缺乏具体实验数据支撑。
+2026-05-09 23:02:39,720 [INFO] pipeline:   [17/20] 正在分析：TurboQuant: A First-Principles Walkthrough
+2026-05-09 23:02:39,848 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-09 23:02:42,403 [INFO] pipeline:     ✓ 评分 6/10 — 内容系统但缺乏创新性，适合入门学习。
+2026-05-09 23:02:42,904 [INFO] pipeline:   [18/20] 正在分析：Transformers are Inherently Succinct
+2026-05-09 23:02:43,003 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-09 23:02:46,238 [INFO] pipeline:     ✓ 评分 7/10 — 理论贡献显著，揭示了Transformer的表达力与计算复杂性之间的权衡。
+2026-05-09 23:02:46,742 [INFO] pipeline:   [19/20] 正在分析：Build yourself flowers
+2026-05-09 23:02:46,826 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-09 23:02:49,129 [INFO] pipeline:     ✓ 评分 4/10 — 信息量有限，缺乏具体技术细节和社区反馈，价值较低。
+2026-05-09 23:02:49,630 [INFO] pipeline:   [20/20] 正在分析：Reversing SynthID
+2026-05-09 23:02:49,734 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-09 23:02:53,497 [INFO] pipeline:     ✓ 评分 7/10 — 对AI安全领域有实际参考价值，但非突破性发现。
+2026-05-09 23:02:53,998 [INFO] pipeline:   ✓ 分析完成：共 20 条
+2026-05-09 23:02:54,006 [INFO] pipeline:   ■ 分析结果已暂存：knowledge/raw/pipeline-analyzed-2026-05-09.json（共 20 条）
+2026-05-09 23:02:54,006 [INFO] pipeline: 
+2026-05-09 23:02:54,006 [INFO] pipeline: ========================================================
+2026-05-09 23:02:54,006 [INFO] pipeline:   流水线执行完毕（69.7 秒）
+2026-05-09 23:02:54,006 [INFO] pipeline:   采集 20 条 → 分析 20 条 → 入库 0 篇
+2026-05-09 23:02:54,006 [INFO] pipeline: ========================================================
+2026-05-09 23:02:54,006 [INFO] pipeline: 

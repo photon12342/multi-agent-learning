@@ -517,77 +517,138 @@ def _category_dir(tags: list[str]) -> str:
 # ---------------------------------------------------------------------------
 
 
-def run_pipeline(sources: list[str], limit: int, dry_run: bool) -> None:
-    """Execute the full collect-analyze-organize-save pipeline.
+def _today_str() -> str:
+    return datetime.now(timezone.utc).strftime("%Y-%m-%d")
+
+
+def _latest_file(prefix: str) -> Path | None:
+    """Find the most recent file under RAW_DIR matching the given prefix."""
+    RAW_DIR.mkdir(parents=True, exist_ok=True)
+    candidates = sorted(RAW_DIR.glob(f"{prefix}*.json"), reverse=True)
+    return candidates[0] if candidates else None
+
+
+def _load_json(path: Path) -> list[dict[str, Any]]:
+    with open(path, encoding="utf-8") as f:
+        return json.load(f)
+
+
+def _save_json(path: Path, data: list[dict[str, Any]]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+
+
+def run_pipeline(sources: list[str], limit: int, dry_run: bool, steps: list[int] | None = None) -> None:
+    """Execute the collect-analyze-organize-save pipeline.
 
     Args:
         sources: Source types to collect (github, rss).
         limit: Max items per source.
         dry_run: Skip LLM calls and file writes.
+        steps: Which step(s) to run. Defaults to all 4 steps.
     """
+    if steps is None:
+        steps = [1, 2, 3, 4]
     start = time.time()
     mode = " [干跑模式]" if dry_run else ""
+    step_labels = ", ".join(f"Step {s}" for s in steps)
 
     logger.info("")
     logger.info("=" * 56)
-    logger.info("  AI 知识库自动化流水线  v2%s", mode)
+    logger.info("  AI 知识库自动化流水线  v2%s  [%s]", mode, step_labels)
     logger.info("=" * 56)
     logger.info("")
+
+    today = _today_str()
+    all_raw: list[dict[str, Any]] = []
+    analyzed: list[dict[str, Any]] = []
+    articles: list[dict[str, Any]] = []
 
     # -----------------------------------------------------------------------
     # Step 1: 采集
     # -----------------------------------------------------------------------
-    logger.info("━" * 56)
-    logger.info("  Step 1/4：采集数据")
-    logger.info("━" * 56)
+    if 1 in steps:
+        logger.info("━" * 56)
+        logger.info("  Step 1/4：采集数据")
+        logger.info("━" * 56)
 
-    all_raw: list[dict[str, Any]] = []
-    if "github" in sources:
-        all_raw.extend(collect_github(limit))
-    if "rss" in sources:
-        all_raw.extend(collect_rss(limit))
+        if "github" in sources:
+            all_raw.extend(collect_github(limit))
+        if "rss" in sources:
+            all_raw.extend(collect_rss(limit))
 
-    if not all_raw:
-        logger.warning("  ✗ 未采集到任何数据，流程终止")
-        return
+        if not all_raw:
+            logger.warning("  ✗ 未采集到任何数据，流程终止")
+            return
 
-    raw_path = RAW_DIR / f"pipeline-raw-{datetime.now(timezone.utc).strftime('%Y-%m-%d')}.json"
-    RAW_DIR.mkdir(parents=True, exist_ok=True)
-    with open(raw_path, "w", encoding="utf-8") as f:
-        json.dump(all_raw, f, ensure_ascii=False, indent=2)
-    logger.info("  ■ 原始数据已暂存：%s（共 %d 条）",
-                raw_path.relative_to(BASE_DIR), len(all_raw))
-    logger.info("")
+        raw_path = RAW_DIR / f"pipeline-raw-{today}.json"
+        _save_json(raw_path, all_raw)
+        logger.info("  ■ 原始数据已暂存：%s（共 %d 条）",
+                    raw_path.relative_to(BASE_DIR), len(all_raw))
+        logger.info("")
+    elif 2 in steps or 3 in steps or 4 in steps:
+        loaded = _latest_file("pipeline-raw-")
+        if loaded:
+            all_raw = _load_json(loaded)
+            logger.info("  ■ 加载已有原始数据：%s（共 %d 条）",
+                        loaded.relative_to(BASE_DIR), len(all_raw))
+        else:
+            logger.warning("  ✗ 未找到原始数据文件，流程终止")
+            return
 
     # -----------------------------------------------------------------------
     # Step 2: 分析
     # -----------------------------------------------------------------------
-    logger.info("━" * 56)
-    logger.info("  Step 2/4：LLM 深度分析")
-    logger.info("━" * 56)
+    if 2 in steps:
+        logger.info("━" * 56)
+        logger.info("  Step 2/4：LLM 深度分析")
+        logger.info("━" * 56)
 
-    analyzed = analyze_items(all_raw, dry_run)
-    logger.info("")
+        analyzed = analyze_items(all_raw, dry_run)
+
+        analyzed_path = RAW_DIR / f"pipeline-analyzed-{today}.json"
+        _save_json(analyzed_path, analyzed)
+        logger.info("  ■ 分析结果已暂存：%s（共 %d 条）",
+                    analyzed_path.relative_to(BASE_DIR), len(analyzed))
+        logger.info("")
+    elif 3 in steps or 4 in steps:
+        loaded = _latest_file("pipeline-analyzed-")
+        if loaded:
+            analyzed = _load_json(loaded)
+            logger.info("  ■ 加载已有分析结果：%s（共 %d 条）",
+                        loaded.relative_to(BASE_DIR), len(analyzed))
+        elif all_raw:
+            logger.info("  ■ 跳过分析步骤，使用未分析的原始数据")
+            analyzed = all_raw
+        else:
+            logger.info("  ■ 无分析数据，使用空列表继续")
+            analyzed = []
 
     # -----------------------------------------------------------------------
     # Step 3: 整理
     # -----------------------------------------------------------------------
-    logger.info("━" * 56)
-    logger.info("  Step 3/4：去重 + 质量门控")
-    logger.info("━" * 56)
+    if 3 in steps:
+        logger.info("━" * 56)
+        logger.info("  Step 3/4：去重 + 质量门控")
+        logger.info("━" * 56)
 
-    articles = organize_items(analyzed)
-    logger.info("")
+        articles = organize_items(analyzed)
+        logger.info("")
 
     # -----------------------------------------------------------------------
     # Step 4: 保存
     # -----------------------------------------------------------------------
-    logger.info("━" * 56)
-    logger.info("  Step 4/4：写入知识库")
-    logger.info("━" * 56)
+    if 4 in steps:
+        logger.info("━" * 56)
+        logger.info("  Step 4/4：写入知识库")
+        logger.info("━" * 56)
 
-    save_articles(articles, dry_run)
-    logger.info("")
+        if 3 not in steps and not articles:
+            articles = organize_items(analyzed)
+
+        save_articles(articles, dry_run)
+        logger.info("")
 
     # -----------------------------------------------------------------------
     # 汇总
@@ -632,6 +693,14 @@ def _parse_args() -> argparse.Namespace:
         help="Max items per source. Default: 20",
     )
     parser.add_argument(
+        "--step",
+        type=int,
+        choices=[1, 2, 3, 4],
+        action="append",
+        dest="steps",
+        help="Run specific step(s). Can be specified multiple times, e.g. --step 1 --step 2",
+    )
+    parser.add_argument(
         "--dry-run",
         action="store_true",
         help="Simulate without LLM calls or file writes",
@@ -658,7 +727,8 @@ def main() -> None:
     )
 
     sources = [s.strip() for s in args.sources.split(",") if s.strip()]
-    run_pipeline(sources, args.limit, args.dry_run)
+    steps = args.steps or [1, 2, 3, 4]
+    run_pipeline(sources, args.limit, args.dry_run, steps=steps)
 
 
 if __name__ == "__main__":

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-09T13:42:37Z",
+  "updated_at": "2026-05-09T14:53:41Z",
   "articles": [
     {
       "id": "2026-05-09-ai-terminology-is-poorly-defined-and-oft-0490",
@@ -232,6 +232,19 @@
         "formal languages",
         "complexity",
         "succinctness"
+      ]
+    },
+    {
+      "id": "2026-05-09-triton-language-for-huawei-ascend-3565",
+      "title": "Triton语言适配华为昇腾芯片，拓展AI编译器生态至国产硬件平台。",
+      "url": "https://github.com/triton-lang/triton-ascend",
+      "score": 6,
+      "tags": [
+        "triton",
+        "huawei",
+        "ascend",
+        "compiler",
+        "ai"
       ]
     },
     {
