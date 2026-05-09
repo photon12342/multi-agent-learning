@@ -1,0 +1,12 @@
+{
+  "title": "Hmbown/DeepSeek-TUI",
+  "url": "https://github.com/Hmbown/DeepSeek-TUI",
+  "source": "github_trending",
+  "popularity": "3,731 stars today",
+  "deep_summary": "用 Rust 编写的终端 AI 编程代理，专为 DeepSeek 模型优化。在命令行中即可完成代码编写、重构和调试，无需离开终端。22k+ 总星数验证了其在开发者社区中的广泛认可。",
+  "highlight": "Rust 实现的 DeepSeek 终端代理，3,731 日增星引爆开发者社区",
+  "score": 8,
+  "tags": ["LLM", "CLI工具", "Rust", "编程代理"],
+  "date": "2026-05-09",
+  "created_at": "2026-05-09T12:00:00Z"
+}

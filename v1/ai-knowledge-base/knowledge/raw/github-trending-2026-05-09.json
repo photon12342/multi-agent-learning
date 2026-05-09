@@ -1,0 +1,72 @@
+[
+  {
+    "title": "Hmbown/DeepSeek-TUI",
+    "url": "https://github.com/Hmbown/DeepSeek-TUI",
+    "source": "github_trending",
+    "popularity": "3,731 stars today",
+    "summary": "DeepSeek 模型的终端编程代理，在命令行中直接与 DeepSeek 交互完成编码任务"
+  },
+  {
+    "title": "anthropics/financial-services",
+    "url": "https://github.com/anthropics/financial-services",
+    "source": "github_trending",
+    "popularity": "3,660 stars today",
+    "summary": "Anthropic 推出的金融服务领域 AI 应用示例和工具集"
+  },
+  {
+    "title": "addyosmani/agent-skills",
+    "url": "https://github.com/addyosmani/agent-skills",
+    "source": "github_trending",
+    "popularity": "1,893 stars today",
+    "summary": "面向 AI 编程代理的生产级工程技能集合，提升代理编码质量"
+  },
+  {
+    "title": "decolua/9router",
+    "url": "https://github.com/decolua/9router",
+    "source": "github_trending",
+    "popularity": "1,052 stars today",
+    "summary": "免费 AI 编码路由，连接 Claude/GPT/Gemini 等 40+ 提供商，自动回 fallback"
+  },
+  {
+    "title": "datawhalechina/hello-agents",
+    "url": "https://github.com/datawhalechina/hello-agents",
+    "source": "github_trending",
+    "popularity": "667 stars today",
+    "summary": "从零开始构建 AI 智能体的原理与实践中文教程"
+  },
+  {
+    "title": "LearningCircuit/local-deep-research",
+    "url": "https://github.com/LearningCircuit/local-deep-research",
+    "source": "github_trending",
+    "popularity": "559 stars today",
+    "summary": "本地深度研究工具，支持本地/云端 LLM，集成 arXiv 等搜索引擎，SimpleQA 达 95%"
+  },
+  {
+    "title": "z-lab/dflash",
+    "url": "https://github.com/z-lab/dflash",
+    "source": "github_trending",
+    "popularity": "379 stars today",
+    "summary": "块扩散闪存推测解码（Block Diffusion），加速 LLM 推理的新方法"
+  },
+  {
+    "title": "HKUDS/AI-Trader",
+    "url": "https://github.com/HKUDS/AI-Trader",
+    "source": "github_trending",
+    "popularity": "202 stars today",
+    "summary": "100% 全自动代理原生交易系统，AI 驱动的量化交易框架"
+  },
+  {
+    "title": "lobehub/lobehub",
+    "url": "https://github.com/lobehub/lobehub",
+    "source": "github_trending",
+    "popularity": "125 stars today",
+    "summary": "下一代智能体协作平台，支持多智能体协作和智能体团队设计"
+  },
+  {
+    "title": "awslabs/aidlc-workflows",
+    "url": "https://github.com/awslabs/aidlc-workflows",
+    "source": "github_trending",
+    "popularity": "58 stars today",
+    "summary": "AWS 推出的 AI 驱动生命周期自适应工作流编排规则，用于 AI 编码代理"
+  }
+]

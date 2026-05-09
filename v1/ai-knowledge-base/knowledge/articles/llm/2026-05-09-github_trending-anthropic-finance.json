@@ -1,0 +1,12 @@
+{
+  "title": "anthropics/financial-services",
+  "url": "https://github.com/anthropics/financial-services",
+  "source": "github_trending",
+  "popularity": "3,660 stars today",
+  "deep_summary": "Anthropic 官方推出的金融服务场景 AI 应用示例集，涵盖合规审查、风险评估、报告生成等金融领域典型用例。为金融行业采用 Claude 模型提供开箱即用的参考实现。",
+  "highlight": "Anthropic 官方出品，金融行业 AI 落地的标杆参考实现",
+  "score": 7,
+  "tags": ["LLM", "金融科技", "应用开发", "Anthropic"],
+  "date": "2026-05-09",
+  "created_at": "2026-05-09T12:00:00Z"
+}

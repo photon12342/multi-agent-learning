@@ -1,0 +1,12 @@
+{
+  "title": "addyosmani/agent-skills",
+  "url": "https://github.com/addyosmani/agent-skills",
+  "source": "github_trending",
+  "popularity": "1,893 stars today",
+  "deep_summary": "Google Chrome 团队工程总监 Addy Osmani 整理的 AI 编程代理技能集合，涵盖代码审查、测试生成、重构、文档编写等工程场景的提示词和配置模板。35k+ 总星数彰显其影响力。",
+  "highlight": "Chrome 团队专家实战沉淀，AI 代理编码技能的工程化最佳实践",
+  "score": 8,
+  "tags": ["AI代理", "工程实践", "提示词工程", "工具链"],
+  "date": "2026-05-09",
+  "created_at": "2026-05-09T12:00:00Z"
+}

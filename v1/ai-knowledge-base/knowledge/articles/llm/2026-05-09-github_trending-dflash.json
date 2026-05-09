@@ -1,0 +1,12 @@
+{
+  "title": "z-lab/dflash",
+  "url": "https://github.com/z-lab/dflash",
+  "source": "github_trending",
+  "popularity": "379 stars today",
+  "deep_summary": "提出块扩散闪存推测解码（Block Diffusion）方法，通过扩散模型并行生成多个 token 候选来加速 LLM 推理。属于 LLM 推理优化的前沿研究方向，技术方案新颖。",
+  "highlight": "扩散模型+推测解码的创新融合，LLM 推理加速的前沿探索",
+  "score": 6,
+  "tags": ["LLM", "推理优化", "扩散模型", "研究"],
+  "date": "2026-05-09",
+  "created_at": "2026-05-09T12:00:00Z"
+}
