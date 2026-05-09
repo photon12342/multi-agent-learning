@@ -1,0 +1,17 @@
+{
+  "id": "2026-05-09-programbench",
+  "title": "ProgramBench: LLM 代码重建评测",
+  "source": "github-trending",
+  "url": "https://github.com/facebookresearch/ProgramBench",
+  "collected_at": "2026-05-09T19:59:27+08:00",
+  "summary": "Meta 出品，评估 LLM 从零重建程序能力的基准测试，衡量代码理解与生成水平。",
+  "highlights": [
+    "来自 Meta Research，学术权威性强",
+    "创新性评估维度：测试 LLM 从零重建完整程序而非片段补全",
+    "为代码生成领域提供更全面的评测标准"
+  ],
+  "score": 6,
+  "score_reason": "有价值的评测基准，但影响力尚需时间验证，非直接可用工具",
+  "tags": ["benchmark", "code-generation", "llm-evaluation", "meta"],
+  "relevance_score": 0.6
+}

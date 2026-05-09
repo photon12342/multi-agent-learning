@@ -1,0 +1,17 @@
+{
+  "id": "2026-05-09-deepclaude",
+  "title": "DeepClaude: AI 编程降本代理",
+  "source": "github-trending",
+  "url": "https://github.com/aattaran/deepclaude",
+  "collected_at": "2026-05-09T19:59:27+08:00",
+  "summary": "用 DeepSeek V4 Pro 驱动 Claude Code 自主循环，成本降至 1/17，体验不打折。",
+  "highlights": [
+    "将 Claude Code 的推理成本压缩至原来的 1/17，降本效果极其显著",
+    "无缝替代方案，开发者无需改变工作流即可大幅降低 AI 编程开支",
+    "JavaScript 实现，轻量级封装，易于集成到现有 CI/CD 管线"
+  ],
+  "score": 8,
+  "score_reason": "1/17 成本降幅是实实在在的痛点解决方案，直接可用的降本利器",
+  "tags": ["deepseek", "claude-code", "cost-optimization", "ai-agent"],
+  "relevance_score": 0.8
+}

@@ -1,0 +1,17 @@
+{
+  "id": "2026-05-09-tokenspeed",
+  "title": "TokenSpeed: 超低延迟推理引擎",
+  "source": "github-trending",
+  "url": "https://github.com/lightseekorg/tokenspeed",
+  "collected_at": "2026-05-09T19:59:27+08:00",
+  "summary": "光速级 LLM 推理引擎，超低延迟，支持 DeepSeek、Qwen、Kimi 等主流模型。",
+  "highlights": [
+    "支持 DeepSeek、Qwen、Kimi 等多模型，兼容性覆盖主流中文大模型",
+    "以超低延迟为设计目标，定位光速级推理体验",
+    "Python 实现，易于集成和二次开发"
+  ],
+  "score": 7,
+  "score_reason": "高性能推理引擎解决实际部署瓶颈，多模型支持扩展性强，但需与 ds4 等竞品对比验证",
+  "tags": ["inference-engine", "deepseek", "llm", "performance"],
+  "relevance_score": 0.7
+}

@@ -1,0 +1,17 @@
+{
+  "id": "2026-05-09-train-gpt",
+  "title": "如何训练你的 GPT：LLM 入门教程",
+  "source": "github-trending",
+  "url": "https://github.com/raiyanyahya/how-to-train-your-gpt",
+  "collected_at": "2026-05-09T19:59:27+08:00",
+  "summary": "从零构建现代 LLM 的教学项目，逐行注释配通俗讲解，入门大模型训练首选。",
+  "highlights": [
+    "逐行注释 + 通俗讲解，极大降低大模型训练的学习门槛",
+    "基于 Jupyter Notebook，可交互式学习，理论与实践结合紧密",
+    "涵盖 Transformer、PyTorch 等核心技术栈，系统性极强"
+  ],
+  "score": 6,
+  "score_reason": "优秀的教育资源但非生产工具，对初学者价值高，对资深开发者参考有限",
+  "tags": ["education", "llm", "tutorial", "deep-learning"],
+  "relevance_score": 0.6
+}

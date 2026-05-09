@@ -1,0 +1,10 @@
+{
+  "id": "github-20260509-002",
+  "title": "deepseek-ai/DeepSeek-R1",
+  "source": "github",
+  "url": "https://github.com/deepseek-ai/DeepSeek-R1",
+  "collected_at": "2026-05-09T10:00:00Z",
+  "summary": "DeepSeek-R1 是一个开源大语言模型，采用强化学习训练，推理能力出色。",
+  "score": 8,
+  "tags": ["llm", "open-source", "reasoning", "deepseek"]
+}

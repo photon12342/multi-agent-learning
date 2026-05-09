@@ -1,0 +1,17 @@
+{
+  "id": "2026-05-09-photo-agents",
+  "title": "Photo-Agents: 自进化视觉 AI",
+  "source": "github-trending",
+  "url": "https://github.com/jmerelnyc/Photo-agents",
+  "collected_at": "2026-05-09T19:59:27+08:00",
+  "summary": "自进化视觉智能体，具备照片级记忆，可自主编写技能，视觉 AI Agent 新范式。",
+  "highlights": [
+    "自进化能力：Agent 可自主编写和扩展自身技能集",
+    "照片级记忆系统：具备持久化视觉记忆，不止于短期上下文",
+    "探索视觉 AI Agent 的全新范式，从感知到行动的闭环"
+  ],
+  "score": 7,
+  "score_reason": "自进化视觉 Agent 概念新颖，技术方向有前瞻性，但成熟度尚处早期",
+  "tags": ["vision-agent", "autonomous-agent", "self-evolving", "ai-agents"],
+  "relevance_score": 0.7
+}

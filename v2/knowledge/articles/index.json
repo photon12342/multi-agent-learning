@@ -1,0 +1,82 @@
+{
+  "updated_at": "2026-05-09T19:59:27+08:00",
+  "articles": [
+    {
+      "id": "2026-05-09-deepclaude",
+      "title": "DeepClaude: AI 编程降本代理",
+      "url": "https://github.com/aattaran/deepclaude",
+      "score": 8,
+      "tags": ["deepseek", "claude-code", "cost-optimization", "ai-agent"]
+    },
+    {
+      "id": "2026-05-09-ds4",
+      "title": "ds4: DeepSeek 本地推理引擎",
+      "url": "https://github.com/antirez/ds4",
+      "score": 9,
+      "tags": ["deepseek", "local-inference", "apple-metal", "llm"]
+    },
+    {
+      "id": "2026-05-09-mirage",
+      "title": "Mirage: Agent 虚拟文件系统",
+      "url": "https://github.com/strukto-ai/mirage",
+      "score": 8,
+      "tags": ["ai-agents", "virtual-filesystem", "infrastructure", "agent-tools"]
+    },
+    {
+      "id": "2026-05-09-photo-agents",
+      "title": "Photo-Agents: 自进化视觉 AI",
+      "url": "https://github.com/jmerelnyc/Photo-agents",
+      "score": 7,
+      "tags": ["vision-agent", "autonomous-agent", "self-evolving", "ai-agents"]
+    },
+    {
+      "id": "2026-05-09-programbench",
+      "title": "ProgramBench: LLM 代码重建评测",
+      "url": "https://github.com/facebookresearch/ProgramBench",
+      "score": 6,
+      "tags": ["benchmark", "code-generation", "llm-evaluation", "meta"]
+    },
+    {
+      "id": "2026-05-09-robotics-skills",
+      "title": "机器人技能套件：76 个自动化技能",
+      "url": "https://github.com/jherrodthomas/robotics-skills-suite",
+      "score": 6,
+      "tags": ["robotics", "claude", "industrial-automation", "ros2"]
+    },
+    {
+      "id": "2026-05-09-tokenspeed",
+      "title": "TokenSpeed: 超低延迟推理引擎",
+      "url": "https://github.com/lightseekorg/tokenspeed",
+      "score": 7,
+      "tags": ["inference-engine", "deepseek", "llm", "performance"]
+    },
+    {
+      "id": "2026-05-09-train-gpt",
+      "title": "如何训练你的 GPT：LLM 入门教程",
+      "url": "https://github.com/raiyanyahya/how-to-train-your-gpt",
+      "score": 6,
+      "tags": ["education", "llm", "tutorial", "deep-learning"]
+    },
+    {
+      "id": "github-20260509-001",
+      "title": "openai/openai-agents-sdk",
+      "url": "https://github.com/openai/openai-agents-sdk",
+      "score": 9,
+      "tags": ["agent", "sdk", "openai", "llm"]
+    },
+    {
+      "id": "github-20260509-002",
+      "title": "deepseek-ai/DeepSeek-R1",
+      "url": "https://github.com/deepseek-ai/DeepSeek-R1",
+      "score": 8,
+      "tags": ["llm", "open-source", "reasoning", "deepseek"]
+    },
+    {
+      "id": "hn-20260509-001",
+      "title": "Hacker News 今日热门：AI Agent 的趋势与展望",
+      "url": "https://news.ycombinator.com/item?id=12345678",
+      "score": 7,
+      "tags": ["agent", "discussion", "trending"]
+    }
+  ]
+}

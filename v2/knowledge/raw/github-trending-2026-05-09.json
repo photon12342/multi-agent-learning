@@ -1,0 +1,126 @@
+{
+  "source": "github-trending",
+  "skill": "github-trending",
+  "collected_at": "2026-05-09T17:10:00+08:00",
+  "count": 10,
+  "items": [
+    {
+      "name": "antirez/ds4",
+      "url": "https://github.com/antirez/ds4",
+      "summary": "ds4：DeepSeek 4 Flash 本地推理引擎，专为 Apple Metal 优化。Redis 作者出品，3 天斩获 3200+ 星，速度惊人。",
+      "stars": 3204,
+      "language": "C",
+      "topics": []
+    },
+    {
+      "name": "aattaran/deepclaude",
+      "url": "https://github.com/aattaran/deepclaude",
+      "summary": "deepclaude：用 DeepSeek V4 Pro 驱动 Claude Code 自主智能体循环。成本降至 1/17，体验不变，性价比极高。",
+      "stars": 1662,
+      "language": "JavaScript",
+      "topics": []
+    },
+    {
+      "name": "strukto-ai/mirage",
+      "url": "https://github.com/strukto-ai/mirage",
+      "summary": "mirage：AI 智能体统一虚拟文件系统。让 Agent 像操作本地文件一样管理远程资源，打通工具壁垒。",
+      "stars": 1558,
+      "language": "TypeScript",
+      "topics": [
+        "agent-sandbox",
+        "agent-tools",
+        "ai-agents",
+        "langchain",
+        "llm-agents"
+      ]
+    },
+    {
+      "name": "yaojingang/yao-open-prompts",
+      "url": "https://github.com/yaojingang/yao-open-prompts",
+      "summary": "yao-open-prompts：中文 AI 提示词库。覆盖工作学习及生活场景，开源社区增长迅速。",
+      "stars": 1435,
+      "language": "Python",
+      "topics": [
+        "ai",
+        "prompt-engineering",
+        "prompts",
+        "chinese-prompts"
+      ]
+    },
+    {
+      "name": "lightseekorg/tokenspeed",
+      "url": "https://github.com/lightseekorg/tokenspeed",
+      "summary": "TokenSpeed：光速级 LLM 推理引擎。超低延迟推理，支持 DeepSeek、Qwen、Kimi 等主流大模型。",
+      "stars": 835,
+      "language": "Python",
+      "topics": [
+        "llm",
+        "deepseek",
+        "tokenspeed",
+        "speed-of-light",
+        "gpt-oss"
+      ]
+    },
+    {
+      "name": "raiyanyahya/how-to-train-your-gpt",
+      "url": "https://github.com/raiyanyahya/how-to-train-your-gpt",
+      "summary": "how-to-train-your-gpt：从零构建现代 LLM 教学项目。逐行注释 + 通俗讲解，入门大模型训练的首选。",
+      "stars": 774,
+      "language": "Jupyter Notebook",
+      "topics": [
+        "gpt",
+        "llm",
+        "deep-learning",
+        "transformers",
+        "pytorch"
+      ]
+    },
+    {
+      "name": "jherrodthomas/robotics-skills-suite",
+      "url": "https://github.com/jherrodthomas/robotics-skills-suite",
+      "summary": "robotics-skills-suite：76 个 Claude 机器人自动化技能。覆盖 ISO 安全标准，工业级 AI+机器人方案。",
+      "stars": 507,
+      "language": null,
+      "topics": [
+        "anthropic",
+        "claude",
+        "robotics",
+        "ros2",
+        "industrial-robotics"
+      ]
+    },
+    {
+      "name": "facebookresearch/ProgramBench",
+      "url": "https://github.com/facebookresearch/ProgramBench",
+      "summary": "ProgramBench：Facebook 出品，评估 LLM 从零重建程序的能力。衡量代码理解与生成的新基准。",
+      "stars": 378,
+      "language": "Python",
+      "topics": []
+    },
+    {
+      "name": "jmerelnyc/Photo-agents",
+      "url": "https://github.com/jmerelnyc/Photo-agents",
+      "summary": "Photo-agents：自进化视觉智能体。具备照片级记忆，可自主编写技能，视觉 AI Agent 新范式。",
+      "stars": 348,
+      "language": "Python",
+      "topics": [
+        "ai-agents",
+        "autonomous-agents",
+        "agent-memory",
+        "computer-use",
+        "llm"
+      ]
+    },
+    {
+      "name": "fendouai/CodexSaver",
+      "url": "https://github.com/fendouai/CodexSaver",
+      "summary": "CodexSaver：用 DeepSeek 替代 Codex 降本增效。不牺牲推理质量，大幅降低 AI 编程成本。",
+      "stars": 319,
+      "language": "Python",
+      "topics": [
+        "codex",
+        "deepseek"
+      ]
+    }
+  ]
+}
