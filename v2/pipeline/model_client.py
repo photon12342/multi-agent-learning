@@ -144,6 +144,7 @@ class LLMResponse:
     usage: Usage = field(default_factory=Usage)
     model: str = ""
     provider: str = ""
+    cost: Optional[float] = None  # API 返回的成本（美元），可选
 
 
 # ---------------------------------------------------------------------------
@@ -168,6 +169,12 @@ PROVIDER_CONFIG: dict[str, dict[str, Any]] = {
         "model": "gpt-4o-mini",
         "api_key_env": "OPENAI_API_KEY",
         "pricing": {"input": 0.15, "output": 0.60},
+    },
+    "openrouter": {
+        "base_url": "https://openrouter.ai/api/v1",
+        "model": "deepseek/deepseek-chat",
+        "api_key_env": "OPENROUTER_API_KEY",
+        "pricing": {"input": 0.27, "output": 1.10},  # 默认使用 deepseek 价格
     },
 }
 
