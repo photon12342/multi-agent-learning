@@ -1,0 +1,14 @@
+{
+  "id": "https---github.com-tensorflow-tensorflow",
+  "title": "tensorflow",
+  "source": "github",
+  "url": "https://github.com/tensorflow/tensorflow",
+  "summary": "TensorFlow 是一个由 Google 开发的端到端开源机器学习框架，支持从研究到生产的全流程，提供丰富的工具和库，适用于深度学习和数值计算。",
+  "tags": [
+    "机器学习",
+    "深度学习",
+    "开源框架"
+  ],
+  "relevance_score": 1.0,
+  "collected_at": "2026-05-10T08:17:56.177130Z"
+}

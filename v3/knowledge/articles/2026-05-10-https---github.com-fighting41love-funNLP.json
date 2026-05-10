@@ -1,0 +1,16 @@
+{
+  "id": "https---github.com-fighting41love-funNLP",
+  "title": "funNLP",
+  "source": "github",
+  "url": "https://github.com/fighting41love/funNLP",
+  "summary": "funNLP是一个全面的自然语言处理（NLP）资源库，汇集了中文文本处理、情感分析、命名实体识别、知识图谱、语音识别等众多领域的工具、数据集和模型，适合NLP研究与开发。",
+  "tags": [
+    "NLP",
+    "中文处理",
+    "数据集",
+    "知识图谱",
+    "语音识别"
+  ],
+  "relevance_score": 0.95,
+  "collected_at": "2026-05-10T08:18:03.521814Z"
+}

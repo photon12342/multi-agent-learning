@@ -305,6 +305,130 @@
         "discussion",
         "trending"
       ]
+    },
+    {
+      "id": "https---github.com-practical-tutorials-project-based-learning",
+      "title": "project-based-learning",
+      "source": "github",
+      "url": "https://github.com/practical-tutorials/project-based-learning",
+      "tags": [
+        "教程集合",
+        "编程学习",
+        "项目驱动"
+      ],
+      "relevance_score": 0.9
+    },
+    {
+      "id": "https---github.com-tensorflow-tensorflow",
+      "title": "tensorflow",
+      "source": "github",
+      "url": "https://github.com/tensorflow/tensorflow",
+      "tags": [
+        "机器学习",
+        "深度学习",
+        "TensorFlow"
+      ],
+      "relevance_score": 0.95
+    },
+    {
+      "id": "https---github.com-huggingface-transformers",
+      "title": "transformers",
+      "source": "github",
+      "url": "https://github.com/huggingface/transformers",
+      "tags": [
+        "深度学习",
+        "预训练模型",
+        "自然语言处理"
+      ],
+      "relevance_score": 0.95
+    },
+    {
+      "id": "https---github.com-microsoft-Web-Dev-For-Beginners",
+      "title": "Web-Dev-For-Beginners",
+      "source": "github",
+      "url": "https://github.com/microsoft/Web-Dev-For-Beginners",
+      "tags": [
+        "Web开发",
+        "初学者课程",
+        "JavaScript",
+        "微软",
+        "HTML/CSS"
+      ],
+      "relevance_score": 0.95
+    },
+    {
+      "id": "https---github.com-microsoft-ML-For-Beginners",
+      "title": "ML-For-Beginners",
+      "source": "github",
+      "url": "https://github.com/microsoft/ML-For-Beginners",
+      "tags": [
+        "机器学习",
+        "入门教程",
+        "微软"
+      ],
+      "relevance_score": 0.95
+    },
+    {
+      "id": "https---github.com-fighting41love-funNLP",
+      "title": "funNLP",
+      "source": "github",
+      "url": "https://github.com/fighting41love/funNLP",
+      "tags": [
+        "自然语言处理",
+        "中文语料",
+        "知识图谱",
+        "预训练模型",
+        "文本挖掘"
+      ],
+      "relevance_score": 0.95
+    },
+    {
+      "id": "https---github.com-PKUFlyingPig-cs-self-learning",
+      "title": "cs-self-learning",
+      "source": "github",
+      "url": "https://github.com/PKUFlyingPig/cs-self-learning",
+      "tags": [
+        "计算机科学",
+        "自学指南",
+        "学习资源"
+      ],
+      "relevance_score": 0.85
+    },
+    {
+      "id": "https---github.com-josephmisiti-awesome-machine-learning",
+      "title": "awesome-machine-learning",
+      "source": "github",
+      "url": "https://github.com/josephmisiti/awesome-machine-learning",
+      "tags": [
+        "机器学习",
+        "资源列表",
+        "Python"
+      ],
+      "relevance_score": 0.9
+    },
+    {
+      "id": "https---github.com-prakhar1989-awesome-courses",
+      "title": "awesome-courses",
+      "source": "github",
+      "url": "https://github.com/prakhar1989/awesome-courses",
+      "tags": [
+        "计算机科学",
+        "课程资源",
+        "高等教育"
+      ],
+      "relevance_score": 0.9
+    },
+    {
+      "id": "https---github.com-labmlai-annotated_deep_learning_paper_implementations",
+      "title": "annotated_deep_learning_paper_implementations",
+      "source": "github",
+      "url": "https://github.com/labmlai/annotated_deep_learning_paper_implementations",
+      "tags": [
+        "深度学习",
+        "论文实现",
+        "教程"
+      ],
+      "relevance_score": 0.95
     }
   ]
 }

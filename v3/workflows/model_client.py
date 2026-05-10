@@ -36,19 +36,19 @@ def chat(prompt: str, **kwargs: Any) -> tuple[str, dict]:
     return resp.content, usage
 
 
-def chat_json(prompt: str, **kwargs: Any) -> dict:
+def chat_json(prompt: str, **kwargs: Any) -> tuple[dict, dict]:
     """发送 prompt 并解析返回的 JSON。
 
-    期望 LLM 返回纯 JSON 文本，解析后返回 dict。
+    期望 LLM 返回纯 JSON 文本，解析后返回 (dict, usage)。
 
     Args:
         prompt: 用户输入（应指示 LLM 返回 JSON）。
         **kwargs: 传递给 chat() 的参数。
 
     Returns:
-        解析后的 dict。
+        (parsed_dict, usage_dict) 元组。
     """
-    text, _ = chat(prompt, **kwargs)
+    text, usage = chat(prompt, **kwargs)
     text = text.strip()
 
     # 尝试提取 ```json ... ``` 代码块
@@ -57,4 +57,4 @@ def chat_json(prompt: str, **kwargs: Any) -> dict:
         if len(lines) >= 2:
             text = "\n".join(lines[1:-1])
 
-    return json.loads(text)
+    return json.loads(text), usage
