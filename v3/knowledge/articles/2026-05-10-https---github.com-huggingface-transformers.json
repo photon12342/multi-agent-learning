@@ -3,12 +3,14 @@
   "title": "transformers",
   "source": "github",
   "url": "https://github.com/huggingface/transformers",
-  "summary": "Hugging Face的Transformers是一个用于最先进机器学习模型（涵盖文本、视觉、音频和多模态）的框架，支持推理和训练，提供统一的API和大量预训练模型。",
+  "summary": "Hugging Face Transformers是一个先进的机器学习框架，支持文本、视觉、音频和多模态模型的定义、训练与推理，提供海量预训练模型和统一API。",
   "tags": [
     "深度学习",
-    "自然语言处理",
-    "预训练模型"
+    "多模态学习",
+    "模型库",
+    "计算机视觉",
+    "音频处理"
   ],
-  "relevance_score": 0.9,
-  "collected_at": "2026-05-10T08:17:58.101204Z"
+  "relevance_score": 0.8,
+  "collected_at": "2026-05-10T08:21:59.010579Z"
 }

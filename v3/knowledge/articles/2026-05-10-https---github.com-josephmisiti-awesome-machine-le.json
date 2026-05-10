@@ -3,12 +3,12 @@
   "title": "awesome-machine-learning",
   "source": "github",
   "url": "https://github.com/josephmisiti/awesome-machine-learning",
-  "summary": "一个精心整理的机器学习资源列表，涵盖框架、库和软件，为开发者提供全面参考。",
+  "summary": "该项目是精心整理的机器学习框架、库和软件的资源列表，涵盖多种编程语言，为学习与开发提供全面指引。",
   "tags": [
     "机器学习",
     "资源列表",
-    "Python"
+    "编程语言"
   ],
-  "relevance_score": 0.85,
-  "collected_at": "2026-05-10T08:18:07.383554Z"
+  "relevance_score": 0.8,
+  "collected_at": "2026-05-10T08:22:09.048036Z"
 }

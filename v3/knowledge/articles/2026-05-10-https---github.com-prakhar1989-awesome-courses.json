@@ -3,12 +3,12 @@
   "title": "awesome-courses",
   "source": "github",
   "url": "https://github.com/prakhar1989/awesome-courses",
-  "summary": "该项目汇集了全球顶尖大学的优质计算机科学课程资源，涵盖算法、系统、人工智能等多个方向，是自学CS的宝贵指南。",
+  "summary": "整理全球顶尖大学计算机科学课程资源的开源清单，涵盖算法、系统、AI等核心方向，为自学者提供高质量学习路径参考。",
   "tags": [
-    "计算机科学",
-    "大学课程",
-    "学习资源"
+    "课程资源",
+    "计算机教育",
+    "开源清单"
   ],
-  "relevance_score": 0.9,
-  "collected_at": "2026-05-10T08:18:09.066624Z"
+  "relevance_score": 0.8,
+  "collected_at": "2026-05-10T08:22:10.543997Z"
 }
