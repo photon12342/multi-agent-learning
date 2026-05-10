@@ -3,12 +3,14 @@
   "title": "annotated_deep_learning_paper_implementations",
   "source": "github",
   "url": "https://github.com/labmlai/annotated_deep_learning_paper_implementations",
-  "summary": "该项目提供60多种深度学习论文的带注释实现与教程，涵盖Transformer、优化器、GAN、强化学习等核心主题，配有逐行解释，适合学习与复现经典模型。",
+  "summary": "该项目收集了60多个深度学习经典论文的代码实现与配套教程，覆盖Transformer、GANs、强化学习、优化器等主流领域。代码带有详尽注释和数学推导，将论文理论与可运行代码紧密结合，适合学习与研究。",
   "tags": [
     "深度学习",
-    "论文复现",
-    "视觉教程"
+    "论文实现",
+    "教程",
+    "代码注释",
+    "GitHub项目"
   ],
   "relevance_score": 0.95,
-  "collected_at": "2026-05-10T08:22:12.336800Z"
+  "collected_at": "2026-05-10T09:40:07.349846Z"
 }

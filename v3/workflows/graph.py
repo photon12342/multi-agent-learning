@@ -1,7 +1,7 @@
 """workflows/graph — LangGraph 工作流组装。
 
-组装 collect → analyze → organize → review → (save) 工作流。
-review 节点后根据 review_passed 条件分支。
+组装 collect → analyze → review → (organize/save) 工作流。
+review 后 3 路条件路由：通过→organize，不通过且<3轮→revise，不通过且≥3轮→human_flag。
 """
 
 from __future__ import annotations
@@ -25,27 +25,47 @@ from workflows.nodes import (
     save_node,
 )
 from workflows.reviewer import review_node
+from workflows.reviser import revise_node
 from workflows.state import KBState
 
 logger = logging.getLogger(__name__)
 
 
 # ---------------------------------------------------------------------------
+# 辅助节点
+# ---------------------------------------------------------------------------
+
+def human_flag_node(state: KBState) -> dict:
+    """人工介入标记节点：多次审核未通过，需要人工处理。"""
+    iteration = state.get("iteration", 0)
+    logger.warning("[HumanFlagNode] 审核 %d 次仍未通过，需要人工介入", iteration)
+    return {}
+
+
+# ---------------------------------------------------------------------------
 # 路由函数
 # ---------------------------------------------------------------------------
 
-def _after_review(state: KBState) -> Literal["save", "organize"]:
-    """review 节点后的路由逻辑。
+def route_after_review(state: KBState) -> Literal["organize", "revise", "human_flag"]:
+    """review 节点后的 3 路条件路由。
 
-    根据 review_passed 决定是保存还是重新整理。
+    - 通过 → organize（进入整理阶段）
+    - 不通过且 iteration < 3 → revise（循环修正）
+    - 不通过且 iteration >= 3 → human_flag（人工介入）
     """
     passed = state.get("review_passed", False)
+    iteration = state.get("iteration", 0)
+
     if passed:
-        logger.info("[Graph] 审核通过，进入保存节点")
-        return "save"
-    else:
-        logger.info("[Graph] 审核未通过，回到整理节点修正")
+        logger.info("[Graph] 审核通过（iteration=%d），进入整理节点", iteration)
         return "organize"
+
+    if iteration < 3:
+        logger.info("[Graph] 审核未通过（iteration=%d），进入修正节点", iteration)
+        return "revise"
+
+    logger.warning("[Graph] 审核 %d 次未通过，标记人工介入", iteration)
+    return "human_flag"
 
 
 # ---------------------------------------------------------------------------
@@ -63,30 +83,39 @@ def build_graph() -> StateGraph:
     # 添加节点
     graph.add_node("collect", collect_node)
     graph.add_node("analyze", analyze_node)
-    graph.add_node("organize", organize_node)
     graph.add_node("review", review_node)
+    graph.add_node("organize", organize_node)
     graph.add_node("save", save_node)
+    graph.add_node("revise", revise_node)
+    graph.add_node("human_flag", human_flag_node)
 
     # 设置入口点
     graph.set_entry_point("collect")
 
-    # 线性边: collect → analyze → organize → review
+    # 线性边: collect → analyze → review（review 直接审 analyses）
     graph.add_edge("collect", "analyze")
-    graph.add_edge("analyze", "organize")
-    graph.add_edge("organize", "review")
+    graph.add_edge("analyze", "review")
 
-    # 条件边: review 之后根据 review_passed 分支
+    # 条件边: review 之后 3 路路由
     graph.add_conditional_edges(
         "review",
-        _after_review,
+        route_after_review,
         {
-            "save": "save",
             "organize": "organize",
+            "revise": "revise",
+            "human_flag": "human_flag",
         },
     )
 
-    # save → END
+    # organize → save → END
+    graph.add_edge("organize", "save")
     graph.add_edge("save", END)
+
+    # revise → review（修正后重新审核）
+    graph.add_edge("revise", "review")
+
+    # human_flag → END
+    graph.add_edge("human_flag", END)
 
     return graph.compile()
 
@@ -122,7 +151,6 @@ if __name__ == "__main__":
         for node_name, state_update in chunk.items():
             logger.info("[Graph] 节点 %s 执行完成", node_name)
 
-            # 打印关键输出
             if node_name == "collect":
                 sources = state_update.get("sources", [])
                 logger.info("[Graph] 采集到 %d 条数据", len(sources))
@@ -133,10 +161,6 @@ if __name__ == "__main__":
                 analyses = state_update.get("analyses", [])
                 logger.info("[Graph] 分析完成 %d 条", len(analyses))
 
-            elif node_name == "organize":
-                articles = state_update.get("articles", [])
-                logger.info("[Graph] 整理完成 %d 条 articles", len(articles))
-
             elif node_name == "review":
                 passed = state_update.get("review_passed", False)
                 feedback = state_update.get("review_feedback", "")
@@ -145,8 +169,19 @@ if __name__ == "__main__":
                 if feedback:
                     logger.info("[Graph] 审核反馈: %s", feedback[:100])
 
+            elif node_name == "revise":
+                analyses = state_update.get("analyses", [])
+                logger.info("[Graph] 修正完成 %d 条", len(analyses))
+
+            elif node_name == "organize":
+                articles = state_update.get("articles", [])
+                logger.info("[Graph] 整理完成 %d 条 articles", len(articles))
+
             elif node_name == "save":
                 logger.info("[Graph] 保存完成")
+
+            elif node_name == "human_flag":
+                logger.info("[Graph] 标记人工介入")
 
             final_state = state_update
 

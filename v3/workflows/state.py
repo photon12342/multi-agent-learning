@@ -36,5 +36,9 @@ class KBState(TypedDict, total=False):
     # 审核阶段：当前已执行的审核循环次数（上限 3 次）
     iteration: int
 
+    # plan 字段是 11-3 才加 · 本节还没有
+    needs_human_review: bool # ← 新增：HumanFlag 节点设为 True
+    
     # 全程追踪：各步骤的 token 用量，格式如 {"collect": {...}, "analyze": {...}, "organize": {...}}
     cost_tracker: dict
+

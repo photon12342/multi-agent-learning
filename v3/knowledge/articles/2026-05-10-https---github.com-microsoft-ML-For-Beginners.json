@@ -3,14 +3,14 @@
   "title": "ML-For-Beginners",
   "source": "github",
   "url": "https://github.com/microsoft/ML-For-Beginners",
-  "summary": "微软出品的机器学习入门课程，12周26节课和52个测验，涵盖经典机器学习算法，适合初学者通过Jupyter Notebook实践学习。",
+  "summary": "微软出品的机器学习入门课程，为期12周、共26节课和52个测验，内容涵盖线性回归、决策树、神经网络等经典算法，通过Jupyter Notebook实践学习，强调理论结合动手实验。",
   "tags": [
     "机器学习",
-    "入门教程",
+    "入门课程",
     "微软",
-    "课程",
-    "Jupyter Notebook"
+    "算法",
+    "动手实践"
   ],
-  "relevance_score": 0.9,
-  "collected_at": "2026-05-10T08:22:02.708714Z"
+  "relevance_score": 0.95,
+  "collected_at": "2026-05-10T09:39:58.355237Z"
 }

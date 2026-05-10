@@ -3,12 +3,14 @@
   "title": "cs-self-learning",
   "source": "github",
   "url": "https://github.com/PKUFlyingPig/cs-self-learning",
-  "summary": "📚 北大开源计算机自学指南，涵盖基础课、系统、AI等模块化课程体系，提供从零到就业的系统学习路径。",
+  "summary": "北京大学学生整理的计算机科学自学路线图，涵盖从入门到进阶的课程、书籍和项目，覆盖算法、操作系统、网络、数据库等核心领域，强调实践与理论结合，适合系统自学CS知识。",
   "tags": [
-    "计算机科学自学",
-    "开源课程",
-    "系统学习路线"
+    "计算机科学",
+    "自学指南",
+    "学习资源",
+    "课程",
+    "开源项目"
   ],
-  "relevance_score": 0.95,
-  "collected_at": "2026-05-10T08:22:07.102140Z"
+  "relevance_score": 0.8,
+  "collected_at": "2026-05-10T09:40:02.823428Z"
 }
