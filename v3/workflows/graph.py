@@ -10,6 +10,7 @@ import logging
 import sys
 from pathlib import Path
 from typing import Literal
+from workflows.planner import planner_node # ← 新增
 
 # 将项目根目录加入 sys.path
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
@@ -46,27 +47,18 @@ def human_flag_node(state: KBState) -> dict:
 # 路由函数
 # ---------------------------------------------------------------------------
 
-def route_after_review(state: KBState) -> Literal["organize", "revise", "human_flag"]:
-    """review 节点后的 3 路条件路由。
+def route_after_review(state: KBState) -> str:
+  """条件路由：读 state["plan"]["max_iterations"]，不再硬编码 3"""
+  plan = state.get("plan", {}) or {}
+  max_iter = int(plan.get("max_iterations", 3))
+  iteration = state.get("iteration", 0)
 
-    - 通过 → organize（进入整理阶段）
-    - 不通过且 iteration < 3 → revise（循环修正）
-    - 不通过且 iteration >= 3 → human_flag（人工介入）
-    """
-    passed = state.get("review_passed", False)
-    iteration = state.get("iteration", 0)
-
-    if passed:
-        logger.info("[Graph] 审核通过（iteration=%d），进入整理节点", iteration)
-        return "organize"
-
-    if iteration < 3:
-        logger.info("[Graph] 审核未通过（iteration=%d），进入修正节点", iteration)
-        return "revise"
-
-    logger.warning("[Graph] 审核 %d 次未通过，标记人工介入", iteration)
-    return "human_flag"
-
+  if state.get("review_passed", False):
+    return "organize"
+  elif iteration >= max_iter:
+   return "human_flag"
+  else:
+   return "revise"
 
 # ---------------------------------------------------------------------------
 # 图构建
@@ -81,6 +73,7 @@ def build_graph() -> StateGraph:
     graph = StateGraph(KBState)
 
     # 添加节点
+    graph.add_node("plan", planner_node)
     graph.add_node("collect", collect_node)
     graph.add_node("analyze", analyze_node)
     graph.add_node("review", review_node)
@@ -90,7 +83,10 @@ def build_graph() -> StateGraph:
     graph.add_node("human_flag", human_flag_node)
 
     # 设置入口点
-    graph.set_entry_point("collect")
+    graph.set_entry_point("plan")
+
+    # plan → collect（规划完成后开始采集）
+    graph.add_edge("plan", "collect")
 
     # 线性边: collect → analyze → review（review 直接审 analyses）
     graph.add_edge("collect", "analyze")

@@ -46,17 +46,20 @@ def review_node(state: KBState) -> dict:
     """
     logger.info("[ReviewerNode] 开始审核 analyses")
 
+    plan = state.get("plan", {}) or {}
+    max_iter = int(plan.get("max_iterations", 3))
+
     analyses = state.get("analyses", [])
     iteration = state.get("iteration", 0)
     cost_tracker = state.get("cost_tracker", {})
     node_tracker = cost_tracker.get("reviewer", {})
 
-    # iteration >= 2 强制通过（最多 3 轮）
-    if iteration >= 2:
-        logger.info("[ReviewerNode] iteration=%d >= 2，强制通过", iteration)
+    # iteration >= max_iter 强制通过
+    if iteration >= max_iter:
+        logger.info("[ReviewerNode] iteration=%d >= %d，强制通过", iteration, max_iter)
         return {
             "review_passed": True,
-            "review_feedback": "强制通过（iteration >= 2）",
+            "review_feedback": f"强制通过（iteration >= {max_iter}）",
             "iteration": iteration + 1,
             "cost_tracker": cost_tracker,
         }

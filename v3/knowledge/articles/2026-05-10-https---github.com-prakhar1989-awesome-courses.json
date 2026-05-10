@@ -3,12 +3,13 @@
   "title": "awesome-courses",
   "source": "github",
   "url": "https://github.com/prakhar1989/awesome-courses",
-  "summary": "一个精选的计算机科学大学课程资源列表，涵盖算法、人工智能、系统设计等领域，包含视频讲座、作业和项目，适合自学者和开发者参考学习。",
+  "summary": "收录全球顶尖高校计算机科学在线课程资源，涵盖编程、算法、系统、AI等方向，提供系统化自学者路径，并附带项目作业与评估标准。",
   "tags": [
     "计算机科学",
-    "大学课程",
-    "学习资源"
+    "课程资源",
+    "自学",
+    "在线教育"
   ],
-  "relevance_score": 0.9,
-  "collected_at": "2026-05-10T09:40:05.863056Z"
+  "relevance_score": 0.8,
+  "collected_at": "2026-05-10T11:21:35.891786Z"
 }

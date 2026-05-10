@@ -3,14 +3,12 @@
   "title": "Web-Dev-For-Beginners",
   "source": "github",
   "url": "https://github.com/microsoft/Web-Dev-For-Beginners",
-  "summary": "微软出品、面向初学者的Web开发课程，包含24节课和12周学习计划，使用JavaScript语言，系统覆盖HTML、CSS基础及前端框架应用，适合零基础学习者入门Web开发。",
+  "summary": "微软推出的面向初学者的Web开发课程，包含24节课程和12周的学习计划，内容覆盖HTML、CSS、JavaScript等Web前端核心技术，并融合了Git、无障碍设计等实践技能，适合零基础入门，但与AI/ML领域相关性较低。",
   "tags": [
     "Web开发",
-    "初学者",
-    "微软课程",
-    "JavaScript",
-    "前端入门"
+    "初学者教程",
+    "微软课程"
   ],
-  "relevance_score": 0.88,
-  "collected_at": "2026-05-10T09:39:56.710076Z"
+  "relevance_score": 0.4,
+  "collected_at": "2026-05-10T11:21:25.943447Z"
 }

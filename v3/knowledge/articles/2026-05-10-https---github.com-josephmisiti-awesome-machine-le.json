@@ -3,13 +3,16 @@
   "title": "awesome-machine-learning",
   "source": "github",
   "url": "https://github.com/josephmisiti/awesome-machine-learning",
-  "summary": "一个社区维护的机器学习资源列表，涵盖框架、库和软件，支持Python、R、Java等多语言，覆盖深度学习、强化学习、NLP等领域，是ML入门和进阶的常用参考，但需注意推荐内容的权威性。",
+  "summary": "精心整理的机器学习框架、库和软件资源列表，涵盖 Python、R、Java 等多种语言，包含深度学习（如TensorFlow、PyTorch）、自然语言处理、计算机视觉等领域，突出各工具的适用场景与关键特性，适合开发者快速对比和选取学习工具。",
   "tags": [
     "机器学习",
     "资源列表",
+    "框架",
     "Python",
-    "开源工具"
+    "深度学习",
+    "TensorFlow",
+    "PyTorch"
   ],
-  "relevance_score": 0.85,
-  "collected_at": "2026-05-10T09:40:04.363505Z"
+  "relevance_score": 0.95,
+  "collected_at": "2026-05-10T11:21:33.848110Z"
 }

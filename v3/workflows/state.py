@@ -15,6 +15,8 @@ class KBState(TypedDict, total=False):
     传递的是已处理的结构化摘要，而非原始响应。
     """
 
+    plan: dict
+
     # 采集阶段：各数据源返回的结构化条目（已标准化字段名）
     # 每个 dict 包含：source, title, url, raw_content, collected_at 等
     sources: list[dict]
@@ -36,7 +38,6 @@ class KBState(TypedDict, total=False):
     # 审核阶段：当前已执行的审核循环次数（上限 3 次）
     iteration: int
 
-    # plan 字段是 11-3 才加 · 本节还没有
     needs_human_review: bool # ← 新增：HumanFlag 节点设为 True
     
     # 全程追踪：各步骤的 token 用量，格式如 {"collect": {...}, "analyze": {...}, "organize": {...}}

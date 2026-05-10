@@ -54,9 +54,12 @@ def collect_node(state: KBState) -> dict:
     """采集节点：调用 GitHub Search API 采集 AI 相关仓库。"""
     logger.info("[CollectNode] 开始采集 AI 相关仓库")
 
+    plan = state.get("plan", {}) or {}
+    per_page = int(plan.get("per_source_limit", 10))
+
     query = "AI OR artificial intelligence OR machine learning OR deep learning"
     encoded_query = urllib.parse.quote(query)
-    url = f"https://api.github.com/search/repositories?q={encoded_query}&sort=stars&order=desc&per_page=10"
+    url = f"https://api.github.com/search/repositories?q={encoded_query}&sort=stars&order=desc&per_page={per_page}"
 
     sources = []
     cost_tracker = state.get("cost_tracker", {})
@@ -161,8 +164,11 @@ def _build_article(item: dict) -> dict:
 
 
 def organize_node(state: KBState) -> dict:
-    """整理节点：过滤低分条目(< 0.6)、按 URL 去重、如有审核反馈则用 LLM 修正。"""
+    """整理节点：过滤低分条目、按 URL 去重、如有审核反馈则用 LLM 修正。"""
     logger.info("[OrganizeNode] 开始整理数据")
+
+    plan = state.get("plan", {}) or {}
+    threshold = float(plan.get("relevance_threshold", 0.5))
 
     analyses = state.get("analyses", [])
     iteration = state.get("iteration", 0)
@@ -171,8 +177,8 @@ def organize_node(state: KBState) -> dict:
     node_tracker = cost_tracker.get("organize", {})
 
     # 1. 过滤低分条目
-    filtered = [a for a in analyses if a.get("relevance_score", 0) >= 0.6]
-    logger.info("[OrganizeNode] 过滤后剩余 %d 条（原 %d 条）", len(filtered), len(analyses))
+    filtered = [a for a in analyses if a.get("relevance_score", 0) >= threshold]
+    logger.info("[OrganizeNode] 过滤后剩余 %d 条（原 %d 条），阈值=%.1f", len(filtered), len(analyses), threshold)
 
     # 2. 按 URL 去重
     seen_urls = set()
