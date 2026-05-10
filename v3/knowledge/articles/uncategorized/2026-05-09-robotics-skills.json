@@ -1,0 +1,17 @@
+{
+  "id": "2026-05-09-robotics-skills",
+  "title": "机器人技能套件：76 个自动化技能",
+  "source": "github-trending",
+  "url": "https://github.com/jherrodthomas/robotics-skills-suite",
+  "collected_at": "2026-05-09T19:59:27+08:00",
+  "summary": "76 个 Claude 驱动的机器人自动化技能套件，覆盖 ISO 安全标准，工业级方案。",
+  "highlights": [
+    "76 个预置机器人技能，覆盖工业自动化常见场景，开箱即用",
+    "遵循 ISO 安全标准设计，可直接用于工业级机器人部署",
+    "基于 ROS2 生态，与主流机器人平台兼容"
+  ],
+  "score": 6,
+  "score_reason": "工业机器人 + AI 的有益探索，但场景较垂直，受众有限",
+  "tags": ["robotics", "claude", "industrial-automation", "ros2"],
+  "relevance_score": 0.6
+}

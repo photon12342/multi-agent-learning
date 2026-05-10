@@ -1,0 +1,23 @@
+{
+  "id": "2026-05-09-scaling-pain-of-coding-agent-serving-les-4307",
+  "title": "文章分享了在规模化部署GLM-5编码代理时遇到的扩展挑战与调试经验。",
+  "source": "rss",
+  "url": "https://z.ai/blog/scaling-pain",
+  "collected_at": "2026-05-09T13:41:33Z",
+  "summary": "文章分享了在规模化部署GLM-5编码代理时遇到的扩展挑战与调试经验。",
+  "highlights": [
+    "GLM-5在扩展至大规模编码代理服务时出现性能瓶颈",
+    "通过系统调试解决了服务稳定性与效率问题",
+    "提供了实际部署中的关键教训与优化策略"
+  ],
+  "score": 7,
+  "score_reason": "提供了实际规模化部署中的宝贵经验，对相关工程实践有较高参考价值。",
+  "tags": [
+    "scaling",
+    "coding agent",
+    "glm-5",
+    "debugging",
+    "serving"
+  ],
+  "relevance_score": 0.7
+}

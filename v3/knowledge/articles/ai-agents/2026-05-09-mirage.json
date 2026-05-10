@@ -1,0 +1,17 @@
+{
+  "id": "2026-05-09-mirage",
+  "title": "Mirage: Agent 虚拟文件系统",
+  "source": "github-trending",
+  "url": "https://github.com/strukto-ai/mirage",
+  "collected_at": "2026-05-09T19:59:27+08:00",
+  "summary": "AI 智能体统一虚拟文件系统，让 Agent 像操作本地文件一样管理远程资源。",
+  "highlights": [
+    "首创 Agent 虚拟文件系统抽象层，打通本地与远程资源的管理鸿沟",
+    "TypeScript 实现，原生支持 LangChain 生态，集成成本低",
+    "统一操作范式使多工具编排复杂度大幅降低，Agent 基础设施关键拼图"
+  ],
+  "score": 8,
+  "score_reason": "Agent 基础设施层的创新抽象，解决多工具编排的实际痛点，生态潜力大",
+  "tags": ["ai-agents", "virtual-filesystem", "infrastructure", "agent-tools"],
+  "relevance_score": 0.8
+}

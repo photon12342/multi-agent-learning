@@ -1,0 +1,310 @@
+{
+  "updated_at": "2026-05-09T14:53:41Z",
+  "articles": [
+    {
+      "id": "2026-05-09-ai-terminology-is-poorly-defined-and-oft-0490",
+      "title": "文章指出AI术语定义模糊且常被误用，影响交流与理解。",
+      "url": "https://vale.rocks/posts/ai-terminology",
+      "score": 6,
+      "tags": [
+        "ai",
+        "terminology",
+        "misuse",
+        "definition"
+      ]
+    },
+    {
+      "id": "2026-05-09-deepclaude",
+      "title": "DeepClaude: AI 编程降本代理",
+      "url": "https://github.com/aattaran/deepclaude",
+      "score": 8,
+      "tags": [
+        "deepseek",
+        "claude-code",
+        "cost-optimization",
+        "ai-agent"
+      ]
+    },
+    {
+      "id": "2026-05-09-do-ai-summaries-hurt-critical-thinking-1134",
+      "title": "探讨AI摘要可能削弱批判性思维，引发对技术依赖的反思。",
+      "url": "https://medium.com/blueprint-for-disaster/ai-summaries-are-a-threat-to-our-cognitive-sovereignty-917afc37692f",
+      "score": 6,
+      "tags": [
+        "ai",
+        "critical thinking",
+        "technology",
+        "education",
+        "cognitive bias"
+      ]
+    },
+    {
+      "id": "2026-05-09-ds4",
+      "title": "ds4: DeepSeek 本地推理引擎",
+      "url": "https://github.com/antirez/ds4",
+      "score": 9,
+      "tags": [
+        "deepseek",
+        "local-inference",
+        "apple-metal",
+        "llm"
+      ]
+    },
+    {
+      "id": "2026-05-09-google-s-prompt-api-2188",
+      "title": "Google推出Prompt API，为开发者提供高效构建和优化提示词的工具。",
+      "url": "https://wil.to/posts/googles-prompt-api/",
+      "score": 7,
+      "tags": [
+        "google",
+        "prompt-api",
+        "ai",
+        "developer-tools"
+      ]
+    },
+    {
+      "id": "2026-05-09-mirage",
+      "title": "Mirage: Agent 虚拟文件系统",
+      "url": "https://github.com/strukto-ai/mirage",
+      "score": 8,
+      "tags": [
+        "ai-agents",
+        "virtual-filesystem",
+        "infrastructure",
+        "agent-tools"
+      ]
+    },
+    {
+      "id": "2026-05-09-mojo-v1-0-0b1-2279",
+      "title": "Mojo v1.0.0b1发布，标志着该编程语言进入重要测试阶段。",
+      "url": "https://mojolang.org/releases/v1.0.0b1",
+      "score": 6,
+      "tags": [
+        "mojo",
+        "programming-language",
+        "release",
+        "beta"
+      ]
+    },
+    {
+      "id": "2026-05-09-on-the-limits-of-self-improving-in-large-7650",
+      "title": "论文探讨大语言模型自我改进的极限，指出无符号模型合成则奇点不会临近。",
+      "url": "https://arxiv.org/html/2601.05280v2",
+      "score": 7,
+      "tags": [
+        "llm",
+        "self-improvement",
+        "symbolic-reasoning",
+        "ai-limits"
+      ]
+    },
+    {
+      "id": "2026-05-09-open-weights-are-quietly-closing-up-and-5075",
+      "title": "开源权重模型正悄然封闭，引发对开放性和可重复性的担忧。",
+      "url": "https://martinalderson.com/posts/open-weights-are-quietly-closing-up/",
+      "score": 7,
+      "tags": [
+        "open-source",
+        "ai-ethics",
+        "model-weights",
+        "reproducibility"
+      ]
+    },
+    {
+      "id": "2026-05-09-photo-agents",
+      "title": "Photo-Agents: 自进化视觉 AI",
+      "url": "https://github.com/jmerelnyc/Photo-agents",
+      "score": 7,
+      "tags": [
+        "vision-agent",
+        "autonomous-agent",
+        "self-evolving",
+        "ai-agents"
+      ]
+    },
+    {
+      "id": "2026-05-09-porting-microgpt-to-futhark-part-i-2593",
+      "title": "将microgpt移植到Futhark语言，探索函数式GPU编程在小型GPT模型上的应用。",
+      "url": "https://www.kmjn.org/notes/microgpt_futhark.html",
+      "score": 6,
+      "tags": [
+        "futhark",
+        "gpt",
+        "gpu",
+        "functional-programming",
+        "deep-learning"
+      ]
+    },
+    {
+      "id": "2026-05-09-programbench",
+      "title": "ProgramBench: LLM 代码重建评测",
+      "url": "https://github.com/facebookresearch/ProgramBench",
+      "score": 6,
+      "tags": [
+        "benchmark",
+        "code-generation",
+        "llm-evaluation",
+        "meta"
+      ]
+    },
+    {
+      "id": "2026-05-09-reversing-synthid-5163",
+      "title": "逆向工程谷歌SynthID水印技术，揭示其实现细节与潜在漏洞。",
+      "url": "https://hackerfactor.com/blog/index.php?/archives/1092-Reversing-SynthID.html",
+      "score": 6,
+      "tags": [
+        "watermarking",
+        "reverse-engineering",
+        "ai-safety",
+        "synthid"
+      ]
+    },
+    {
+      "id": "2026-05-09-robotics-skills",
+      "title": "机器人技能套件：76 个自动化技能",
+      "url": "https://github.com/jherrodthomas/robotics-skills-suite",
+      "score": 6,
+      "tags": [
+        "robotics",
+        "claude",
+        "industrial-automation",
+        "ros2"
+      ]
+    },
+    {
+      "id": "2026-05-09-scaling-pain-of-coding-agent-serving-les-4307",
+      "title": "文章分享了在规模化部署GLM-5编码代理时遇到的扩展挑战与调试经验。",
+      "url": "https://z.ai/blog/scaling-pain",
+      "score": 7,
+      "tags": [
+        "scaling",
+        "coding agent",
+        "glm-5",
+        "debugging",
+        "serving"
+      ]
+    },
+    {
+      "id": "2026-05-09-sectorllm-llama2-inference-in-lt-1500-by-9663",
+      "title": "用极简x86汇编实现Llama2推理，仅需1500字节，展示极致优化。",
+      "url": "https://github.com/rdmsr/sectorllm",
+      "score": 8,
+      "tags": [
+        "llama2",
+        "x86",
+        "assembly",
+        "inference",
+        "optimization"
+      ]
+    },
+    {
+      "id": "2026-05-09-tokenspeed",
+      "title": "TokenSpeed: 超低延迟推理引擎",
+      "url": "https://github.com/lightseekorg/tokenspeed",
+      "score": 7,
+      "tags": [
+        "inference-engine",
+        "deepseek",
+        "llm",
+        "performance"
+      ]
+    },
+    {
+      "id": "2026-05-09-train-gpt",
+      "title": "如何训练你的 GPT：LLM 入门教程",
+      "url": "https://github.com/raiyanyahya/how-to-train-your-gpt",
+      "score": 6,
+      "tags": [
+        "education",
+        "llm",
+        "tutorial",
+        "deep-learning"
+      ]
+    },
+    {
+      "id": "2026-05-09-transformers-are-inherently-succinct-6737",
+      "title": "证明Transformer在表达能力上比有限自动机和LTL更简洁，但验证其属性是EXPSPACE完全的。",
+      "url": "https://arxiv.org/abs/2510.19315",
+      "score": 7,
+      "tags": [
+        "transformer",
+        "expressivity",
+        "formal languages",
+        "complexity",
+        "succinctness"
+      ]
+    },
+    {
+      "id": "2026-05-09-triton-language-for-huawei-ascend-3565",
+      "title": "Triton语言适配华为昇腾芯片，拓展AI编译器生态至国产硬件平台。",
+      "url": "https://github.com/triton-lang/triton-ascend",
+      "score": 6,
+      "tags": [
+        "triton",
+        "huawei",
+        "ascend",
+        "compiler",
+        "ai"
+      ]
+    },
+    {
+      "id": "2026-05-09-turboquant-a-first-principles-walkthroug-2476",
+      "title": "TurboQuant从第一性原理出发，系统讲解量化交易核心概念与实现方法。",
+      "url": "https://arkaung.github.io/interactive-turboquant/",
+      "score": 6,
+      "tags": [
+        "quantitative-trading",
+        "algorithmic-trading",
+        "tutorial",
+        "python"
+      ]
+    },
+    {
+      "id": "2026-05-09-why-a-decade-of-writing-detection-logic-0835",
+      "title": "文章指出十年检测逻辑开发经验使Mythos漏洞编号不再令人担忧，强调实战积累可降低威胁感知。",
+      "url": "https://www.magonia.io/research/why-a-decade-of-writing-detection-logic-makes-the-mythos-exploit-numbers-less-scary/",
+      "score": 6,
+      "tags": [
+        "security",
+        "threat-intelligence",
+        "detection-logic",
+        "vulnerability-management"
+      ]
+    },
+    {
+      "id": "github-20260509-001",
+      "title": "openai/openai-agents-sdk",
+      "url": "https://github.com/openai/openai-agents-sdk",
+      "score": 9,
+      "tags": [
+        "agent",
+        "sdk",
+        "openai",
+        "llm"
+      ]
+    },
+    {
+      "id": "github-20260509-002",
+      "title": "deepseek-ai/DeepSeek-R1",
+      "url": "https://github.com/deepseek-ai/DeepSeek-R1",
+      "score": 8,
+      "tags": [
+        "llm",
+        "open-source",
+        "reasoning",
+        "deepseek"
+      ]
+    },
+    {
+      "id": "hn-20260509-001",
+      "title": "Hacker News 今日热门：AI Agent 的趋势与展望",
+      "url": "https://news.ycombinator.com/item?id=12345678",
+      "score": 7,
+      "tags": [
+        "agent",
+        "discussion",
+        "trending"
+      ]
+    }
+  ]
+}

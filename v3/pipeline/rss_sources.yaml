@@ -1,0 +1,36 @@
+# RSS 数据源配置
+# 用于知识库采集流水线的数据输入
+
+sources:
+  # ==================== 综合技术 ====================
+  - name: Hacker News AI/ML
+    url: https://hnrss.org/frontpage?q=ai+OR+llm+OR+agent+OR+machine+learning
+    category: 综合技术
+    enabled: false
+
+  - name: Lobsters AI/ML
+    url: https://lobste.rs/t/ai.rss
+    category: 综合技术
+    enabled: true
+
+  # ==================== AI 研究 ====================
+  - name: arXiv cs.AI
+    url: http://export.arxiv.org/rss/cs.AI
+    category: AI 研究
+    enabled: false
+
+  # ==================== 公司博客 ====================
+  - name: OpenAI Blog
+    url: https://openai.com/blog/rss.xml
+    category: 公司博客
+    enabled: true
+
+  - name: Anthropic Research
+    url: https://www.anthropic.com/research/feed
+    category: 公司博客
+    enabled: true
+
+  - name: Google AI Blog
+    url: https://blog.google/technology/ai/rss
+    category: 公司博客
+    enabled: true

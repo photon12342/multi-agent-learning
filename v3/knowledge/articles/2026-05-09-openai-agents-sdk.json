@@ -1,0 +1,10 @@
+{
+  "id": "github-20260509-001",
+  "title": "openai/openai-agents-sdk",
+  "source": "github",
+  "url": "https://github.com/openai/openai-agents-sdk",
+  "collected_at": "2026-05-09T10:00:00Z",
+  "summary": "OpenAI Agents SDK 是一个用于构建 AI Agent 应用的开发工具包，提供多 Agent 协作、工具调用、记忆管理等功能。",
+  "score": 9,
+  "tags": ["agent", "sdk", "openai", "llm"]
+}

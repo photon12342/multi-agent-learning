@@ -1,0 +1,22 @@
+{
+  "id": "2026-05-09-reversing-synthid-5163",
+  "title": "逆向工程谷歌SynthID水印技术，揭示其实现细节与潜在漏洞。",
+  "source": "rss",
+  "url": "https://hackerfactor.com/blog/index.php?/archives/1092-Reversing-SynthID.html",
+  "collected_at": "2026-05-09T13:41:33Z",
+  "summary": "逆向工程谷歌SynthID水印技术，揭示其实现细节与潜在漏洞。",
+  "highlights": [
+    "SynthID是谷歌用于AI生成图像的水印技术",
+    "逆向工程发现水印嵌入在频域中",
+    "存在被移除或篡改的风险"
+  ],
+  "score": 6,
+  "score_reason": "技术细节有价值，但影响范围有限，适合安全研究者了解。",
+  "tags": [
+    "watermarking",
+    "reverse-engineering",
+    "ai-safety",
+    "synthid"
+  ],
+  "relevance_score": 0.6
+}

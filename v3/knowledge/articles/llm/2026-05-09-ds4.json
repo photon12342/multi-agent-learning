@@ -1,0 +1,17 @@
+{
+  "id": "2026-05-09-ds4",
+  "title": "ds4: DeepSeek 本地推理引擎",
+  "source": "github-trending",
+  "url": "https://github.com/antirez/ds4",
+  "collected_at": "2026-05-09T19:59:27+08:00",
+  "summary": "Redis 作者打造，专为 Apple Metal 优化的 DS4 本地推理引擎，3 天获 3200+ 星。",
+  "highlights": [
+    "由 Redis 创始人 antirez 亲笔开发，3 天斩获 3200+ GitHub Star，社区反响爆炸",
+    "专为 Apple Metal 深度优化，在 Mac 上实现 DS4 模型高效本地推理",
+    "纯 C 实现，为 Mac 用户提供可本地运行的 DS4 推理方案，填补生态空白"
+  ],
+  "score": 9,
+  "score_reason": "传奇开发者打造、针对性硬件优化、社区热度极高，代表本地 LLM 推理的重要里程碑",
+  "tags": ["deepseek", "local-inference", "apple-metal", "llm"],
+  "relevance_score": 0.9
+}

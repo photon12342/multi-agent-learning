@@ -1,0 +1,23 @@
+{
+  "id": "2026-05-09-triton-language-for-huawei-ascend-3565",
+  "title": "Triton语言适配华为昇腾芯片，拓展AI编译器生态至国产硬件平台。",
+  "source": "rss",
+  "url": "https://github.com/triton-lang/triton-ascend",
+  "collected_at": "2026-05-09T14:52:33Z",
+  "summary": "Triton语言适配华为昇腾芯片，拓展AI编译器生态至国产硬件平台。",
+  "highlights": [
+    "Triton语言新增对华为Ascend芯片的支持",
+    "开源社区讨论热度高，来自lobste.rs",
+    "项目Stars为0，处于早期阶段"
+  ],
+  "score": 6,
+  "score_reason": "技术方向有价值，但项目尚处早期，影响力有限。",
+  "tags": [
+    "triton",
+    "huawei",
+    "ascend",
+    "compiler",
+    "ai"
+  ],
+  "relevance_score": 0.6
+}

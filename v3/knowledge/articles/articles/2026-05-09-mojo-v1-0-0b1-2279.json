@@ -1,0 +1,22 @@
+{
+  "id": "2026-05-09-mojo-v1-0-0b1-2279",
+  "title": "Mojo v1.0.0b1发布，标志着该编程语言进入重要测试阶段。",
+  "source": "rss",
+  "url": "https://mojolang.org/releases/v1.0.0b1",
+  "collected_at": "2026-05-09T13:41:33Z",
+  "summary": "Mojo v1.0.0b1发布，标志着该编程语言进入重要测试阶段。",
+  "highlights": [
+    "Mojo v1.0.0b1版本发布",
+    "来自lobste.rs社区讨论",
+    "项目Stars为0，处于早期阶段"
+  ],
+  "score": 6,
+  "score_reason": "作为新语言的首个测试版，值得关注但尚未有广泛社区验证。",
+  "tags": [
+    "mojo",
+    "programming-language",
+    "release",
+    "beta"
+  ],
+  "relevance_score": 0.6
+}
