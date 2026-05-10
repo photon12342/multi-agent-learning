@@ -180,20 +180,30 @@ def route(query: str) -> str:
 # ---------------------------------------------------------------------------
 
 if __name__ == "__main__":
+    import sys
+
     logging.basicConfig(
         level=logging.INFO,
         format="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
     )
 
-    test_queries = [
-        "搜索 GitHub 上关于 deepseek 的项目",
-        "知识库里有没有关于 AI 的文章",
-        "你好，今天天气怎么样？",
-    ]
-
-    for q in test_queries:
+    if len(sys.argv) > 1:
+        query = " ".join(sys.argv[1:])
         print(f"\n{'='*60}")
-        print(f"Query: {q}")
+        print(f"Query: {query}")
         print(f"{'='*60}")
-        result = route(q)
+        result = route(query)
         print(result)
+    else:
+        test_queries = [
+            "搜索 GitHub 上关于 deepseek 的项目",
+            "知识库里有没有关于 AI 的文章",
+            "你好，今天天气怎么样？",
+        ]
+
+        for q in test_queries:
+            print(f"\n{'='*60}")
+            print(f"Query: {q}")
+            print(f"{'='*60}")
+            result = route(q)
+            print(result)
