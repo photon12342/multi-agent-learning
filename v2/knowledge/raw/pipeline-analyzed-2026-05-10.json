@@ -1,0 +1,80 @@
+[
+  {
+    "source": "rss",
+    "source_name": "Lobsters AI/ML",
+    "title": "Aurora: A Leverage-Aware Optimizer for Rectangular Matrices",
+    "url": "https://blog.tilderesearch.com/blog/aurora",
+    "description": "&lt;p&gt;&lt;a href=\"https://lobste.rs/s/2kznvg/aurora_leverage_aware_optimizer_for\"&gt;Comments&lt;/a&gt;&lt;/p&gt;",
+    "stars": 0,
+    "language": null,
+    "topics": [],
+    "collected_at": "2026-05-10T02:35:57Z",
+    "summary": "Aurora是一种针对矩形矩阵的杠杆感知优化器，旨在提升计算效率。",
+    "highlights": [
+      "针对矩形矩阵优化，利用杠杆感知策略",
+      "可能提升矩阵运算性能",
+      "来自lobste.rs社区讨论"
+    ],
+    "score": 5,
+    "score_reason": "该优化器针对特定矩阵类型，有一定技术价值但缺乏详细数据和验证。",
+    "tags": [
+      "optimizer",
+      "matrix",
+      "machine-learning",
+      "performance"
+    ],
+    "analyzed_at": "2026-05-10T02:35:59Z"
+  },
+  {
+    "source": "rss",
+    "source_name": "Lobsters AI/ML",
+    "title": "Mojo v1.0.0b1",
+    "url": "https://mojolang.org/releases/v1.0.0b1",
+    "description": "&lt;p&gt;&lt;a href=\"https://lobste.rs/s/zys8hd/mojo_v1_0_0b1\"&gt;Comments&lt;/a&gt;&lt;/p&gt;",
+    "stars": 0,
+    "language": null,
+    "topics": [],
+    "collected_at": "2026-05-10T02:35:57Z",
+    "summary": "Mojo v1.0.0b1 发布，标志着该语言进入重要测试阶段。",
+    "highlights": [
+      "Mojo 语言发布 v1.0.0b1 版本",
+      "该版本为公开测试版，可能包含新特性与改进",
+      "来自 lobste.rs 社区讨论"
+    ],
+    "score": 6,
+    "score_reason": "作为新语言的重要版本，值得关注但尚未稳定。",
+    "tags": [
+      "mojo",
+      "programming-language",
+      "release",
+      "beta"
+    ],
+    "analyzed_at": "2026-05-10T02:36:02Z"
+  },
+  {
+    "source": "rss",
+    "source_name": "Lobsters AI/ML",
+    "title": "jlearn: Machine Learning Library in J",
+    "url": "https://github.com/jonghough/jlearn",
+    "description": "&lt;p&gt;&lt;a href=\"https://lobste.rs/s/r8v2bx/jlearn_machine_learning_library_j\"&gt;Comments&lt;/a&gt;&lt;/p&gt;",
+    "stars": 0,
+    "language": null,
+    "topics": [],
+    "collected_at": "2026-05-10T02:35:57Z",
+    "summary": "jlearn是一个用J语言实现的机器学习库，目前处于早期阶段，关注度低。",
+    "highlights": [
+      "项目名称明确为J语言的机器学习库",
+      "来源为lobste.rs社区讨论",
+      "当前Stars数为0，表明项目刚起步"
+    ],
+    "score": 2,
+    "score_reason": "项目关注度极低，缺乏具体功能和文档，对多数用户参考价值有限。",
+    "tags": [
+      "j-language",
+      "machine-learning",
+      "library",
+      "early-stage"
+    ],
+    "analyzed_at": "2026-05-10T02:36:06Z"
+  }
+]

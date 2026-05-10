@@ -1,0 +1,44 @@
+2026-05-10 10:00:03,606 [INFO] pipeline: 
+2026-05-10 10:00:03,607 [INFO] pipeline: ========================================================
+2026-05-10 10:00:03,607 [INFO] pipeline:   AI 知识库自动化流水线  v2  [Step 3, Step 4]
+2026-05-10 10:00:03,607 [INFO] pipeline: ========================================================
+2026-05-10 10:00:03,607 [INFO] pipeline: 
+2026-05-10 10:00:03,610 [INFO] pipeline:   ■ 加载已有原始数据：knowledge/raw/pipeline-raw-2026-05-09.json（共 20 条）
+2026-05-10 10:00:03,612 [INFO] pipeline:   ■ 加载已有分析结果：knowledge/raw/pipeline-analyzed-2026-05-09.json（共 20 条）
+2026-05-10 10:00:03,612 [INFO] pipeline: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-05-10 10:00:03,612 [INFO] pipeline:   Step 3/4：去重 + 质量门控
+2026-05-10 10:00:03,612 [INFO] pipeline: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-05-10 10:00:03,613 [INFO] pipeline:   ✗ 评分 5，未达 6 分门槛，丢弃：Mojo v1.0.0b1
+2026-05-10 10:00:03,613 [INFO] pipeline:   ✗ 评分 2，未达 6 分门槛，丢弃：jlearn: Machine Learning Library in J
+2026-05-10 10:00:03,613 [INFO] pipeline:   - 已存在，跳过：Google’s Prompt API
+2026-05-10 10:00:03,613 [INFO] pipeline:   - 已存在，跳过：Open weights are quietly closing up - and that's a problem
+2026-05-10 10:00:03,613 [INFO] pipeline:   - 已存在，跳过：sectorllm: llama2 inference in &lt; 1500 bytes of x86 assembly
+2026-05-10 10:00:03,613 [INFO] pipeline:   - 已存在，跳过：Why a Decade of Writing Detection Logic Makes the Mythos Exploit Numbers Less Scary
+2026-05-10 10:00:03,613 [INFO] pipeline:   ✗ 评分 5，未达 6 分门槛，丢弃：OpenMythos: A theoretical reconstruction of the Claude Mythos architecture, built from first principles using the available research literature
+2026-05-10 10:00:03,613 [INFO] pipeline:   - 已存在，跳过：Do AI summaries hurt critical thinking?
+2026-05-10 10:00:03,613 [INFO] pipeline:   - 已存在，跳过：Porting microgpt to Futhark, Part I
+2026-05-10 10:00:03,613 [INFO] pipeline:   ✗ 评分 4，未达 6 分门槛，丢弃：Where the goblins came from
+2026-05-10 10:00:03,614 [INFO] pipeline:   - 已存在，跳过：Scaling Pain of Coding Agent Serving: Lessons from Debugging GLM-5 at Scale
+2026-05-10 10:00:03,614 [INFO] pipeline:   - 已存在，跳过：AI Terminology is Poorly Defined and Oft Misused
+2026-05-10 10:00:03,614 [INFO] pipeline:   ✗ 评分 1，未达 6 分门槛，丢弃：Localisation Engineering Platform
+2026-05-10 10:00:03,614 [INFO] pipeline:   ✗ 评分 5，未达 6 分门槛，丢弃：Triton language for Huawei Ascend
+2026-05-10 10:00:03,614 [INFO] pipeline:   ✗ 评分 5，未达 6 分门槛，丢弃：Introducing talkie: a 13B vintage language model from 1930
+2026-05-10 10:00:03,614 [INFO] pipeline:   - 已存在，跳过：On the Limits of Self-Improving in Large Language Models: The Singularity Is Not Near Without Symbolic Model Synthesis
+2026-05-10 10:00:03,614 [INFO] pipeline:   - 已存在，跳过：TurboQuant: A First-Principles Walkthrough
+2026-05-10 10:00:03,614 [INFO] pipeline:   - 已存在，跳过：Transformers are Inherently Succinct
+2026-05-10 10:00:03,614 [INFO] pipeline:   ✗ 评分 4，未达 6 分门槛，丢弃：Build yourself flowers
+2026-05-10 10:00:03,614 [INFO] pipeline:   - 已存在，跳过：Reversing SynthID
+2026-05-10 10:00:03,614 [INFO] pipeline:   ⚠ 丢弃 8 条（评分 < 6）
+2026-05-10 10:00:03,614 [INFO] pipeline:   - 跳过 12 条重复内容
+2026-05-10 10:00:03,614 [INFO] pipeline:   ✓ 整理完毕：0 条进入保存阶段
+2026-05-10 10:00:03,614 [INFO] pipeline: 
+2026-05-10 10:00:03,614 [INFO] pipeline: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-05-10 10:00:03,614 [INFO] pipeline:   Step 4/4：写入知识库
+2026-05-10 10:00:03,614 [INFO] pipeline: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-05-10 10:00:03,614 [INFO] pipeline:   (无文章需要保存)
+2026-05-10 10:00:03,614 [INFO] pipeline: 
+2026-05-10 10:00:03,614 [INFO] pipeline: ========================================================
+2026-05-10 10:00:03,614 [INFO] pipeline:   流水线执行完毕（0.0 秒）
+2026-05-10 10:00:03,614 [INFO] pipeline:   采集 20 条 → 分析 20 条 → 入库 0 篇
+2026-05-10 10:00:03,614 [INFO] pipeline: ========================================================
+2026-05-10 10:00:03,615 [INFO] pipeline: 

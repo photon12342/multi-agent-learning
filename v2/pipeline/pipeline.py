@@ -31,7 +31,7 @@ _pipeline_dir = Path(__file__).resolve().parent
 if str(_pipeline_dir) not in sys.path:
     sys.path.insert(0, str(_pipeline_dir))
 
-from model_client import create_provider, chat_with_retry  # noqa: E402
+from model_client import create_provider, chat_with_retry, tracker  # noqa: E402
 
 logger = logging.getLogger("pipeline")
 
@@ -660,6 +660,9 @@ def run_pipeline(sources: list[str], limit: int, dry_run: bool, steps: list[int]
                 len(all_raw), len(analyzed), len(articles))
     logger.info("=" * 56)
     logger.info("")
+
+    # 打印成本报告
+    tracker.report()
 
 
 # ---------------------------------------------------------------------------

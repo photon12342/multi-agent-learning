@@ -1,0 +1,35 @@
+[
+  {
+    "source": "rss",
+    "source_name": "Lobsters AI/ML",
+    "title": "Aurora: A Leverage-Aware Optimizer for Rectangular Matrices",
+    "url": "https://blog.tilderesearch.com/blog/aurora",
+    "description": "&lt;p&gt;&lt;a href=\"https://lobste.rs/s/2kznvg/aurora_leverage_aware_optimizer_for\"&gt;Comments&lt;/a&gt;&lt;/p&gt;",
+    "stars": 0,
+    "language": null,
+    "topics": [],
+    "collected_at": "2026-05-10T02:35:57Z"
+  },
+  {
+    "source": "rss",
+    "source_name": "Lobsters AI/ML",
+    "title": "Mojo v1.0.0b1",
+    "url": "https://mojolang.org/releases/v1.0.0b1",
+    "description": "&lt;p&gt;&lt;a href=\"https://lobste.rs/s/zys8hd/mojo_v1_0_0b1\"&gt;Comments&lt;/a&gt;&lt;/p&gt;",
+    "stars": 0,
+    "language": null,
+    "topics": [],
+    "collected_at": "2026-05-10T02:35:57Z"
+  },
+  {
+    "source": "rss",
+    "source_name": "Lobsters AI/ML",
+    "title": "jlearn: Machine Learning Library in J",
+    "url": "https://github.com/jonghough/jlearn",
+    "description": "&lt;p&gt;&lt;a href=\"https://lobste.rs/s/r8v2bx/jlearn_machine_learning_library_j\"&gt;Comments&lt;/a&gt;&lt;/p&gt;",
+    "stars": 0,
+    "language": null,
+    "topics": [],
+    "collected_at": "2026-05-10T02:35:57Z"
+  }
+]

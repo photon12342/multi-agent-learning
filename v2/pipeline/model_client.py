@@ -24,6 +24,105 @@ load_dotenv(dotenv_path=_dotenv_path)
 logger = logging.getLogger(__name__)
 
 # ---------------------------------------------------------------------------
+# Cost tracking
+# ---------------------------------------------------------------------------
+
+
+class CostTracker:
+    """追踪 LLM API 调用的 token 消耗和成本（人民币）。
+
+    维护各提供商的调用记录，按元/百万 tokens 计价。
+    """
+
+    # 价格表：元/百万 tokens
+    PRICING_CNY: dict[str, dict[str, float]] = {
+        "deepseek": {"input": 1.0, "output": 2.0},
+        "qwen": {"input": 4.0, "output": 12.0},
+        "openai": {"input": 150.0, "output": 600.0},
+    }
+
+    def __init__(self) -> None:
+        """初始化成本追踪器，内部记录表为空。"""
+        self._records: dict[str, list[dict[str, int]]] = {}
+
+    def record(self, usage: Usage, provider: str) -> None:
+        """记录一次 API 调用的 token 用量。
+
+        Args:
+            usage: Token 使用统计。
+            provider: 提供商名称（deepseek/qwen/openai）。
+        """
+        if provider not in self._records:
+            self._records[provider] = []
+
+        self._records[provider].append({
+            "prompt_tokens": usage.prompt_tokens,
+            "completion_tokens": usage.completion_tokens,
+            "total_tokens": usage.total_tokens,
+        })
+
+    def estimated_cost(self, provider: str) -> float:
+        """估算指定提供商的累计成本（人民币）。
+
+        Args:
+            provider: 提供商名称。
+
+        Returns:
+            累计成本（元，保留两位小数）。
+        """
+        if provider not in self._records:
+            return 0.0
+
+        pricing = self.PRICING_CNY.get(provider, {"input": 0.0, "output": 0.0})
+        input_price = pricing["input"]
+        output_price = pricing["output"]
+
+        total_cost = 0.0
+        for record in self._records[provider]:
+            input_cost = (record["prompt_tokens"] / 1_000_000) * input_price
+            output_cost = (record["completion_tokens"] / 1_000_000) * output_price
+            total_cost += input_cost + output_cost
+
+        return round(total_cost, 2)
+
+    def report(self, provider: Optional[str] = None) -> None:
+        """打印成本报告。
+
+        Args:
+            provider: 如果指定，只打印该提供商的报告；
+                否则打印所有提供商的汇总。
+        """
+        providers = [provider] if provider else list(self._records.keys())
+
+        print("=" * 60)
+        print("LLM 成本报告（人民币）")
+        print("=" * 60)
+
+        for prov in providers:
+            if prov not in self._records:
+                continue
+
+            records = self._records[prov]
+            total_prompt = sum(r["prompt_tokens"] for r in records)
+            total_completion = sum(r["completion_tokens"] for r in records)
+            total_tokens = total_prompt + total_completion
+            cost = self.estimated_cost(prov)
+
+            print(f"\n提供商: {prov}")
+            print(f"  调用次数: {len(records)}")
+            print(f"  输入 tokens: {total_prompt:,}")
+            print(f"  输出 tokens: {total_completion:,}")
+            print(f"  总计 tokens: {total_tokens:,}")
+            print(f"  预估成本: ¥{cost:.2f}")
+
+        print("\n" + "=" * 60)
+
+
+# 全局 tracker 实例
+tracker = CostTracker()
+
+
+# ---------------------------------------------------------------------------
 # Data classes
 # ---------------------------------------------------------------------------
 
@@ -204,6 +303,9 @@ class OpenAICompatibleProvider(LLMProvider):
             total_tokens=usage_data.get("total_tokens", 0),
         )
 
+        # 记录用量到全局 tracker
+        tracker.record(usage, self.provider_name)
+
         return LLMResponse(
             content=content,
             usage=usage,
@@ -366,6 +468,37 @@ def quick_chat(
     with OpenAICompatibleProvider(provider_name=provider_name) as provider:
         response = chat_with_retry(provider, messages, **kwargs)
         return response.content
+
+
+def chat(
+    prompt: str,
+    system: str = "You are a helpful assistant.",
+    provider: str | None = None,
+    max_retries: int = MAX_RETRIES,
+    **kwargs: Any,
+) -> LLMResponse:
+    """Send a prompt and return full response with usage tracking.
+
+    Args:
+        prompt: User message content.
+        system: System message content.
+        provider: Provider name (deepseek/qwen/openai).
+            Defaults to DEFAULT_PROVIDER.
+        max_retries: Maximum retry attempts.
+        **kwargs: Additional arguments passed to chat_with_retry().
+
+    Returns:
+        LLMResponse with content and usage stats.
+    """
+    provider_name = provider or DEFAULT_PROVIDER
+    messages = [
+        {"role": "system", "content": system},
+        {"role": "user", "content": prompt},
+    ]
+
+    with OpenAICompatibleProvider(provider_name=provider_name) as p:
+        result = chat_with_retry(p, messages, max_retries=max_retries, **kwargs)
+        return result
 
 
 # ---------------------------------------------------------------------------
