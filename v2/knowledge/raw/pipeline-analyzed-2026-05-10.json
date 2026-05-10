@@ -8,22 +8,20 @@
     "stars": 0,
     "language": null,
     "topics": [],
-    "collected_at": "2026-05-10T02:35:57Z",
+    "collected_at": "2026-05-10T09:44:19Z",
     "summary": "Aurora是一种针对矩形矩阵的杠杆感知优化器，旨在提升计算效率。",
     "highlights": [
       "针对矩形矩阵优化，利用杠杆感知策略",
-      "可能提升矩阵运算性能",
-      "来自lobste.rs社区讨论"
+      "可能提升矩阵运算性能，适用于机器学习等领域"
     ],
     "score": 5,
-    "score_reason": "该优化器针对特定矩阵类型，有一定技术价值但缺乏详细数据和验证。",
+    "score_reason": "项目描述信息有限，缺乏具体数据和验证，但方向有潜力。",
     "tags": [
       "optimizer",
       "matrix",
-      "machine-learning",
-      "performance"
+      "machine-learning"
     ],
-    "analyzed_at": "2026-05-10T02:35:59Z"
+    "analyzed_at": "2026-05-10T09:44:21Z"
   },
   {
     "source": "rss",
@@ -34,22 +32,23 @@
     "stars": 0,
     "language": null,
     "topics": [],
-    "collected_at": "2026-05-10T02:35:57Z",
-    "summary": "Mojo v1.0.0b1 发布，标志着该语言进入重要测试阶段。",
+    "collected_at": "2026-05-10T09:44:19Z",
+    "summary": "Mojo发布v1.0.0b1测试版，标志着该编程语言进入重要里程碑阶段。",
     "highlights": [
-      "Mojo 语言发布 v1.0.0b1 版本",
-      "该版本为公开测试版，可能包含新特性与改进",
-      "来自 lobste.rs 社区讨论"
+      "Mojo v1.0.0b1是首个公开测试版本",
+      "项目源自lobste.rs社区讨论",
+      "语言特性聚焦于高性能与Python兼容性"
     ],
-    "score": 6,
-    "score_reason": "作为新语言的重要版本，值得关注但尚未稳定。",
+    "score": 9,
+    "score_reason": "首个beta版本发布，对AI和系统编程领域具有里程碑意义",
     "tags": [
       "mojo",
       "programming-language",
-      "release",
-      "beta"
+      "beta-release",
+      "high-performance",
+      "ai"
     ],
-    "analyzed_at": "2026-05-10T02:36:02Z"
+    "analyzed_at": "2026-05-10T09:44:25Z"
   },
   {
     "source": "rss",
@@ -60,21 +59,468 @@
     "stars": 0,
     "language": null,
     "topics": [],
-    "collected_at": "2026-05-10T02:35:57Z",
-    "summary": "jlearn是一个用J语言实现的机器学习库，目前处于早期阶段，关注度低。",
+    "collected_at": "2026-05-10T09:44:19Z",
+    "summary": "jlearn是一个用J语言实现的机器学习库，目前关注度低，处于早期阶段。",
     "highlights": [
-      "项目名称明确为J语言的机器学习库",
-      "来源为lobste.rs社区讨论",
-      "当前Stars数为0，表明项目刚起步"
+      "项目名称为jlearn，基于J语言开发",
+      "来源为lobste.rs讨论",
+      "当前Stars为0，社区关注度低"
     ],
-    "score": 2,
-    "score_reason": "项目关注度极低，缺乏具体功能和文档，对多数用户参考价值有限。",
+    "score": 3,
+    "score_reason": "项目尚处萌芽阶段，缺乏用户基础和成熟度，价值有限。",
     "tags": [
-      "j-language",
       "machine-learning",
+      "j-language",
       "library",
       "early-stage"
     ],
-    "analyzed_at": "2026-05-10T02:36:06Z"
+    "analyzed_at": "2026-05-10T09:44:28Z"
+  },
+  {
+    "source": "rss",
+    "source_name": "Lobsters AI/ML",
+    "title": "Google’s Prompt API",
+    "url": "https://wil.to/posts/googles-prompt-api/",
+    "description": "&lt;p&gt;&lt;a href=\"https://lobste.rs/s/at9lwa/google_s_prompt_api\"&gt;Comments&lt;/a&gt;&lt;/p&gt;",
+    "stars": 0,
+    "language": null,
+    "topics": [],
+    "collected_at": "2026-05-10T09:44:19Z",
+    "summary": "Google推出Prompt API，为开发者提供结构化提示接口，简化AI应用开发。",
+    "highlights": [
+      "Google发布Prompt API，旨在标准化AI提示交互",
+      "该API可能集成于Google Cloud及AI服务中",
+      "来自lobste.rs社区讨论，引发开发者关注"
+    ],
+    "score": 6,
+    "score_reason": "值得了解的新API，但缺乏具体技术细节和实际应用案例",
+    "tags": [
+      "google",
+      "prompt-api",
+      "ai",
+      "api",
+      "developer-tools"
+    ],
+    "analyzed_at": "2026-05-10T09:44:31Z"
+  },
+  {
+    "source": "rss",
+    "source_name": "Lobsters AI/ML",
+    "title": "Open weights are quietly closing up - and that's a problem",
+    "url": "https://martinalderson.com/posts/open-weights-are-quietly-closing-up/",
+    "description": "&lt;p&gt;&lt;a href=\"https://lobste.rs/s/jvvtif/open_weights_are_quietly_closing_up_s\"&gt;Comments&lt;/a&gt;&lt;/p&gt;",
+    "stars": 0,
+    "language": null,
+    "topics": [],
+    "collected_at": "2026-05-10T09:44:19Z",
+    "summary": "开源权重模型正悄然封闭，引发对开放性和可重复性的担忧。",
+    "highlights": [
+      "开源权重模型逐渐转向受限许可，限制商业和研究使用。",
+      "这种趋势可能破坏AI领域的开放协作和可重复性。",
+      "社区呼吁保持真正的开放权重以促进创新。"
+    ],
+    "score": 7,
+    "score_reason": "揭示了开源AI生态的重要变化，对研究者和开发者有警示意义。",
+    "tags": [
+      "open-source",
+      "ai-ethics",
+      "model-weights",
+      "reproducibility"
+    ],
+    "analyzed_at": "2026-05-10T09:44:35Z"
+  },
+  {
+    "source": "rss",
+    "source_name": "Lobsters AI/ML",
+    "title": "sectorllm: llama2 inference in &lt; 1500 bytes of x86 assembly",
+    "url": "https://github.com/rdmsr/sectorllm",
+    "description": "&lt;p&gt;&lt;a href=\"https://lobste.rs/s/5ond6x/sectorllm_llama2_inference_1500_bytes\"&gt;Comments&lt;/a&gt;&lt;/p&gt;",
+    "stars": 0,
+    "language": null,
+    "topics": [],
+    "collected_at": "2026-05-10T09:44:19Z",
+    "summary": "用极简x86汇编实现LLaMA2推理，仅需1500字节，展示极致优化。",
+    "highlights": [
+      "1500字节x86汇编实现LLaMA2推理",
+      "极简代码挑战传统深度学习框架",
+      "展示底层优化潜力"
+    ],
+    "score": 7,
+    "score_reason": "技术极简主义创新，但实用性和可扩展性有限。",
+    "tags": [
+      "llama2",
+      "x86",
+      "assembly",
+      "inference",
+      "minimalism"
+    ],
+    "analyzed_at": "2026-05-10T09:44:39Z"
+  },
+  {
+    "source": "rss",
+    "source_name": "Lobsters AI/ML",
+    "title": "Why a Decade of Writing Detection Logic Makes the Mythos Exploit Numbers Less Scary",
+    "url": "https://www.magonia.io/research/why-a-decade-of-writing-detection-logic-makes-the-mythos-exploit-numbers-less-scary/",
+    "description": "&lt;p&gt;&lt;a href=\"https://lobste.rs/s/cvzb9z/why_decade_writing_detection_logic_makes\"&gt;Comments&lt;/a&gt;&lt;/p&gt;",
+    "stars": 0,
+    "language": null,
+    "topics": [],
+    "collected_at": "2026-05-10T09:44:19Z",
+    "summary": "作者基于十年检测逻辑经验，认为神话级漏洞数量虽多但实际威胁有限，不必过度恐慌。",
+    "highlights": [
+      "十年检测逻辑经验表明，多数漏洞利用数据被夸大",
+      "实际攻击中，复杂漏洞利用占比远低于预期",
+      "防御逻辑的持续改进已显著降低高危漏洞的有效性"
+    ],
+    "score": 7,
+    "score_reason": "提供了对漏洞威胁的理性分析，有助于缓解安全焦虑，但缺乏具体数据支撑。",
+    "tags": [
+      "vulnerability",
+      "security",
+      "exploit",
+      "detection",
+      "mythos"
+    ],
+    "analyzed_at": "2026-05-10T09:44:42Z"
+  },
+  {
+    "source": "rss",
+    "source_name": "Lobsters AI/ML",
+    "title": "OpenMythos: A theoretical reconstruction of the Claude Mythos architecture, built from first principles using the available research literature",
+    "url": "https://github.com/kyegomez/OpenMythos",
+    "description": "&lt;p&gt;&lt;a href=\"https://lobste.rs/s/zyjkpd/openmythos_theoretical_reconstruction\"&gt;Comments&lt;/a&gt;&lt;/p&gt;",
+    "stars": 0,
+    "language": null,
+    "topics": [],
+    "collected_at": "2026-05-10T09:44:19Z",
+    "summary": "从第一性原理重构Claude Mythos架构的理论研究，基于现有文献。",
+    "highlights": [
+      "基于公开研究文献从零重建理论架构",
+      "提供对Claude Mythos架构的深入理论分析",
+      "项目名OpenMythos暗示开源与理论探索"
+    ],
+    "score": 5,
+    "score_reason": "理论重构有学术价值，但缺乏实际验证和具体数据支撑。",
+    "tags": [
+      "ai",
+      "architecture",
+      "theory",
+      "research"
+    ],
+    "analyzed_at": "2026-05-10T09:44:46Z"
+  },
+  {
+    "source": "rss",
+    "source_name": "Lobsters AI/ML",
+    "title": "Do AI summaries hurt critical thinking?",
+    "url": "https://medium.com/blueprint-for-disaster/ai-summaries-are-a-threat-to-our-cognitive-sovereignty-917afc37692f",
+    "description": "&lt;p&gt;&lt;a href=\"https://lobste.rs/s/txbgo5/do_ai_summaries_hurt_critical_thinking\"&gt;Comments&lt;/a&gt;&lt;/p&gt;",
+    "stars": 0,
+    "language": null,
+    "topics": [],
+    "collected_at": "2026-05-10T09:44:19Z",
+    "summary": "探讨AI摘要是否削弱批判性思维，引发对技术依赖的反思。",
+    "highlights": [
+      "讨论AI摘要对用户思考深度的影响",
+      "引用社区评论中的不同观点",
+      "关注技术使用中的认知风险"
+    ],
+    "score": 6,
+    "score_reason": "话题有价值但缺乏具体数据支撑，适合一般关注。",
+    "tags": [
+      "ai",
+      "critical thinking",
+      "technology",
+      "summarization"
+    ],
+    "analyzed_at": "2026-05-10T09:44:49Z"
+  },
+  {
+    "source": "rss",
+    "source_name": "Lobsters AI/ML",
+    "title": "Porting microgpt to Futhark, Part I",
+    "url": "https://www.kmjn.org/notes/microgpt_futhark.html",
+    "description": "&lt;p&gt;&lt;a href=\"https://lobste.rs/s/uch4e0/porting_microgpt_futhark_part_i\"&gt;Comments&lt;/a&gt;&lt;/p&gt;",
+    "stars": 0,
+    "language": null,
+    "topics": [],
+    "collected_at": "2026-05-10T09:44:19Z",
+    "summary": "将microgpt移植到Futhark语言，探索GPU加速的GPT实现。",
+    "highlights": [
+      "Futhark是一种函数式、数据并行语言，适合GPU计算",
+      "移植microgpt展示了Futhark在深度学习中的潜力",
+      "项目开源，可复现"
+    ],
+    "score": 6,
+    "score_reason": "技术移植有参考价值，但非突破性成果",
+    "tags": [
+      "futhark",
+      "gpt",
+      "gpu",
+      "deep learning",
+      "porting"
+    ],
+    "analyzed_at": "2026-05-10T09:44:52Z"
+  },
+  {
+    "source": "rss",
+    "source_name": "Lobsters AI/ML",
+    "title": "Where the goblins came from",
+    "url": "https://openai.com/index/where-the-goblins-came-from/",
+    "description": "&lt;p&gt;&lt;a href=\"https://lobste.rs/s/hbmd5q/where_goblins_came_from\"&gt;Comments&lt;/a&gt;&lt;/p&gt;",
+    "stars": 0,
+    "language": null,
+    "topics": [],
+    "collected_at": "2026-05-10T09:44:19Z",
+    "summary": "探讨地精起源的奇幻设定，可能涉及神话或游戏背景。",
+    "highlights": [
+      "来自lobste.rs的讨论",
+      "标题暗示地精起源故事"
+    ],
+    "score": 4,
+    "score_reason": "内容简短且缺乏具体技术细节，价值有限",
+    "tags": [
+      "fantasy",
+      "lore",
+      "discussion"
+    ],
+    "analyzed_at": "2026-05-10T09:44:55Z"
+  },
+  {
+    "source": "rss",
+    "source_name": "Lobsters AI/ML",
+    "title": "Scaling Pain of Coding Agent Serving: Lessons from Debugging GLM-5 at Scale",
+    "url": "https://z.ai/blog/scaling-pain",
+    "description": "&lt;p&gt;&lt;a href=\"https://lobste.rs/s/2v2q1x/scaling_pain_coding_agent_serving\"&gt;Comments&lt;/a&gt;&lt;/p&gt;",
+    "stars": 0,
+    "language": null,
+    "topics": [],
+    "collected_at": "2026-05-10T09:44:19Z",
+    "summary": "文章分享了在规模化部署GLM-5编码代理时遇到的扩展挑战与调试经验。",
+    "highlights": [
+      "GLM-5编码代理在扩展至大规模服务时出现性能瓶颈",
+      "调试过程揭示了系统架构中的关键瓶颈点",
+      "提供了实际部署中的优化策略与教训"
+    ],
+    "score": 7,
+    "score_reason": "提供了实际扩展经验，对大规模AI服务部署有参考价值",
+    "tags": [
+      "scaling",
+      "coding-agent",
+      "glm-5",
+      "debugging",
+      "ai-serving"
+    ],
+    "analyzed_at": "2026-05-10T09:44:59Z"
+  },
+  {
+    "source": "rss",
+    "source_name": "Lobsters AI/ML",
+    "title": "AI Terminology is Poorly Defined and Oft Misused",
+    "url": "https://vale.rocks/posts/ai-terminology",
+    "description": "&lt;p&gt;&lt;a href=\"https://lobste.rs/s/zleph2/ai_terminology_is_poorly_defined_oft\"&gt;Comments&lt;/a&gt;&lt;/p&gt;",
+    "stars": 0,
+    "language": null,
+    "topics": [],
+    "collected_at": "2026-05-10T09:44:19Z",
+    "summary": "文章指出AI术语定义模糊且常被误用，引发理解混乱。",
+    "highlights": [
+      "AI术语缺乏统一定义，导致沟通障碍",
+      "常见术语如“智能”被过度泛化使用",
+      "误用术语可能误导公众和政策制定"
+    ],
+    "score": 6,
+    "score_reason": "指出重要问题但缺乏具体数据支撑，值得了解但非里程碑",
+    "tags": [
+      "ai",
+      "terminology",
+      "misuse",
+      "definition"
+    ],
+    "analyzed_at": "2026-05-10T09:45:02Z"
+  },
+  {
+    "source": "rss",
+    "source_name": "Lobsters AI/ML",
+    "title": "Localisation Engineering Platform",
+    "url": "https://lingo.dev/en/blog/introducing-lingodotdev-v1",
+    "description": "&lt;p&gt;&lt;a href=\"https://lobste.rs/s/xtvxmg/localisation_engineering_platform\"&gt;Comments&lt;/a&gt;&lt;/p&gt;",
+    "stars": 0,
+    "language": null,
+    "topics": [],
+    "collected_at": "2026-05-10T09:44:19Z",
+    "summary": "本地化工程平台，提供评论功能，但缺乏详细描述和实际数据。",
+    "highlights": [
+      "项目来源为rss，有评论链接",
+      "语言和标签信息缺失",
+      "Stars为0，关注度低"
+    ],
+    "score": 2,
+    "score_reason": "信息不完整，缺乏核心价值和数据支撑，可略过。",
+    "tags": [
+      "localization",
+      "engineering",
+      "platform",
+      "rss"
+    ],
+    "analyzed_at": "2026-05-10T09:45:05Z"
+  },
+  {
+    "source": "rss",
+    "source_name": "Lobsters AI/ML",
+    "title": "Triton language for Huawei Ascend",
+    "url": "https://github.com/triton-lang/triton-ascend",
+    "description": "&lt;p&gt;&lt;a href=\"https://lobste.rs/s/z3pidt/triton_language_for_huawei_ascend\"&gt;Comments&lt;/a&gt;&lt;/p&gt;",
+    "stars": 0,
+    "language": null,
+    "topics": [],
+    "collected_at": "2026-05-10T09:44:19Z",
+    "summary": "Triton语言适配华为昇腾芯片，扩展AI硬件生态。",
+    "highlights": [
+      "Triton语言支持华为Ascend芯片",
+      "来自lobste.rs社区讨论",
+      "当前星标数为0"
+    ],
+    "score": 5,
+    "score_reason": "技术适配有潜力，但项目初期缺乏数据和社区热度。",
+    "tags": [
+      "triton",
+      "huawei",
+      "ascend",
+      "ai",
+      "compiler"
+    ],
+    "analyzed_at": "2026-05-10T09:45:08Z"
+  },
+  {
+    "source": "rss",
+    "source_name": "Lobsters AI/ML",
+    "title": "Introducing talkie: a 13B vintage language model from 1930",
+    "url": "https://talkie-lm.com/introducing-talkie",
+    "description": "&lt;p&gt;&lt;a href=\"https://lobste.rs/s/uws0nc/introducing_talkie_13b_vintage_language\"&gt;Comments&lt;/a&gt;&lt;/p&gt;",
+    "stars": 0,
+    "language": null,
+    "topics": [],
+    "collected_at": "2026-05-10T09:44:19Z",
+    "summary": "介绍一个名为talkie的13B参数复古语言模型，灵感源自1930年代技术风格。",
+    "highlights": [
+      "模型规模13B参数",
+      "复古1930年代设计风格",
+      "来自lobste.rs社区讨论"
+    ],
+    "score": 5,
+    "score_reason": "概念有趣但缺乏实际性能数据和应用场景，值得了解但非重大突破。",
+    "tags": [
+      "llm",
+      "retro",
+      "ai",
+      "open-source"
+    ],
+    "analyzed_at": "2026-05-10T09:45:11Z"
+  },
+  {
+    "source": "rss",
+    "source_name": "Lobsters AI/ML",
+    "title": "On the Limits of Self-Improving in Large Language Models: The Singularity Is Not Near Without Symbolic Model Synthesis",
+    "url": "https://arxiv.org/html/2601.05280v2",
+    "description": "&lt;p&gt;&lt;a href=\"https://lobste.rs/s/jgsiqa/on_limits_self_improving_large_language\"&gt;Comments&lt;/a&gt;&lt;/p&gt;",
+    "stars": 0,
+    "language": null,
+    "topics": [],
+    "collected_at": "2026-05-10T09:44:19Z",
+    "summary": "论文探讨大语言模型自我改进的局限性，指出无符号模型合成则无法实现奇点。",
+    "highlights": [
+      "提出符号模型合成是突破自我改进瓶颈的关键",
+      "论证当前LLM自我改进存在理论上限",
+      "挑战了AI自我改进导致奇点的乐观预期"
+    ],
+    "score": 7,
+    "score_reason": "对AI自我改进能力提出重要理论限制，具有启发性和批判性价值。",
+    "tags": [
+      "llm",
+      "self-improvement",
+      "symbolic-reasoning",
+      "ai-limits",
+      "singularity"
+    ],
+    "analyzed_at": "2026-05-10T09:45:14Z"
+  },
+  {
+    "source": "rss",
+    "source_name": "Lobsters AI/ML",
+    "title": "TurboQuant: A First-Principles Walkthrough",
+    "url": "https://arkaung.github.io/interactive-turboquant/",
+    "description": "&lt;p&gt;&lt;a href=\"https://lobste.rs/s/j2uphs/turboquant_first_principles\"&gt;Comments&lt;/a&gt;&lt;/p&gt;",
+    "stars": 0,
+    "language": null,
+    "topics": [],
+    "collected_at": "2026-05-10T09:44:19Z",
+    "summary": "TurboQuant 从第一性原理出发，系统讲解量化交易核心概念与实现方法。",
+    "highlights": [
+      "基于第一性原理构建量化交易知识体系",
+      "涵盖策略开发、回测、执行等全流程",
+      "提供开源代码和可复现的示例"
+    ],
+    "score": 6,
+    "score_reason": "内容系统全面，适合入门学习，但缺乏创新性突破。",
+    "tags": [
+      "quantitative-trading",
+      "first-principles",
+      "tutorial",
+      "open-source"
+    ],
+    "analyzed_at": "2026-05-10T09:45:18Z"
+  },
+  {
+    "source": "rss",
+    "source_name": "Lobsters AI/ML",
+    "title": "Transformers are Inherently Succinct",
+    "url": "https://arxiv.org/abs/2510.19315",
+    "description": "&lt;p&gt;Abstract:\nWe propose succinctness as a measure of the expressive power of a transformer in describing a concept. To this end, we prove that transformers are highly expressive in that they can represent formal languages substantially more succinctly than standard representations of formal languages like finite automata and Linear Temporal Logic (LTL) formulas. As a by-product of this expressivity, we show that verifying properties of transformers is provably intractable (i.e. EXPSPACE-complete).&lt;/p&gt;\n&lt;p&gt;&lt;a href=\"https://lobste.rs/s/hzhyw9/transformers_are_inherently_succinct\"&gt;Comments&lt;/a&gt;&lt;/p&gt;",
+    "stars": 0,
+    "language": null,
+    "topics": [],
+    "collected_at": "2026-05-10T09:44:19Z",
+    "summary": "证明Transformer在描述概念时比有限自动机和LTL更简洁，但验证其性质是EXPSPACE完全的。",
+    "highlights": [
+      "提出简洁性作为衡量Transformer表达能力的新指标",
+      "证明Transformer表示形式语言比有限自动机和LTL更紧凑",
+      "验证Transformer性质的计算复杂度为EXPSPACE完全"
+    ],
+    "score": 7,
+    "score_reason": "理论贡献显著，但缺乏实际应用验证，适合理论研究者关注",
+    "tags": [
+      "transformers",
+      "expressivity",
+      "formal-languages",
+      "complexity",
+      "succinctness"
+    ],
+    "analyzed_at": "2026-05-10T09:45:22Z"
+  },
+  {
+    "source": "rss",
+    "source_name": "Lobsters AI/ML",
+    "title": "Build yourself flowers",
+    "url": "https://vickiboykis.com/2026/04/20/build-yourself-flowers/",
+    "description": "&lt;p&gt;&lt;a href=\"https://lobste.rs/s/u0pix1/build_yourself_flowers\"&gt;Comments&lt;/a&gt;&lt;/p&gt;",
+    "stars": 0,
+    "language": null,
+    "topics": [],
+    "collected_at": "2026-05-10T09:44:19Z",
+    "summary": "一个关于构建个人项目的技术分享，可能涉及编程或创意实践。",
+    "highlights": [
+      "项目名称暗示与花卉相关的创意构建",
+      "来自rss源，可能包含社区讨论",
+      "当前无评分和标签，待探索"
+    ],
+    "score": 4,
+    "score_reason": "信息有限，缺乏具体技术细节和评价，可略过。",
+    "tags": [
+      "project",
+      "creative",
+      "programming"
+    ],
+    "analyzed_at": "2026-05-10T09:45:25Z"
   }
 ]
